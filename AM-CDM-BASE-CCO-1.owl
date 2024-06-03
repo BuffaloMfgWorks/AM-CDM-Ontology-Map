@@ -29,10 +29,26 @@
     
 
 
+    <!-- http://kdl.ge.com/AM-CDM-base#Address -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Address">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeIdentifier"/>
+    </rdf:Description>
+    
+
+
     <!-- http://kdl.ge.com/AM-CDM-base#Coordinate -->
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Coordinate">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CartesianCoordinateSystem"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-base#DatasetMetadata -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#DatasetMetadata">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeIdentifier"/>
     </rdf:Description>
     
 
@@ -57,6 +73,14 @@
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Person">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ProperName"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-base#PhoneNumber -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#PhoneNumber">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeIdentifier"/>
     </rdf:Description>
 </rdf:RDF>
 
