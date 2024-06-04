@@ -12,7 +12,7 @@
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/AMCDM-CCO"/>
-        <owl:imports rdf:resource="http://kdl.ge.com/AM-CDM-base"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/kaggour/AM-CDM/main/OwlModels/AM-CDM-base.owl"/>
         <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/InformationEntityOntology"/>
     </owl:Ontology>
     
