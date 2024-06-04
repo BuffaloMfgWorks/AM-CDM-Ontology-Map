@@ -64,7 +64,6 @@
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#Project">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
     </rdf:Description>
-</rdf:RDF>
 
 
 <!-- http://www.ontologyrepository.com/CommonCoreOntologies/PlanSpecification -->
@@ -81,6 +80,7 @@
         <cco:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/w/index.php?title=Plan&amp;oldid=1047320560</cco:definition_source>
         <cco:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology</cco:is_curated_in_ontology>
         <rdfs:label xml:lang="en">Plan</rdfs:label>
+     </rdf:Description>
 </rdf:RDF>
 
 
