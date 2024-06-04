@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/AM-CDM-MATERIAL-CCO#"
+<rdf:RDF xmlns="http://www.semanticweb.org/AM-CDM-MATERIAL-CCO"
      xml:base="http://www.semanticweb.org/AM-CDM-MATERIAL-CCO"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
