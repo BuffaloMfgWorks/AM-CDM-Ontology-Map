@@ -128,7 +128,7 @@
     <!-- http://kdl.ge.com/AM-CDM-base#Qualification -->
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Qualification">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
     </rdf:Description>
 </rdf:RDF>
 
