@@ -15,7 +15,6 @@
         <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"/>
           <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/AM-CDM-BASE-CCO.owl"/>
     </owl:Ontology>
-</rdf:RDF>
 
 <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
