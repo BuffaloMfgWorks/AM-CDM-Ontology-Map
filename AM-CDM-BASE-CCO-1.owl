@@ -12,8 +12,8 @@
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/AMCDM-CCO"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/kaggour/AM-CDM/main/OwlModels/AM-CDM-base.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/master/InformationEntityOntology.ttly"/>
+        <owl:imports rdf:resource="http://kdl.ge.com/AM-CDM-base"/>
+        <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/InformationEntityOntology"/>
     </owl:Ontology>
     
 
@@ -45,6 +45,22 @@
     
 
 
+    <!-- http://kdl.ge.com/AM-CDM-base#Country -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Country">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/LegalName"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-base#DatasetAccessControl -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#DatasetAccessControl">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
     <!-- http://kdl.ge.com/AM-CDM-base#DatasetMetadata -->
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#DatasetMetadata">
@@ -53,10 +69,34 @@
     
 
 
+    <!-- http://kdl.ge.com/AM-CDM-base#Document -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Document">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+    </rdf:Description>
+    
+
+
     <!-- http://kdl.ge.com/AM-CDM-base#Measurement -->
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Measurement">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-base#Organization -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Organization">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/LegalName"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-base#OrganizationType -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#OrganizationType">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
     </rdf:Description>
     
 
@@ -81,6 +121,14 @@
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#PhoneNumber">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeIdentifier"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-base#Qualification -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Qualification">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
     </rdf:Description>
 </rdf:RDF>
 
