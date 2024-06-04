@@ -112,7 +112,7 @@
     <!-- http://kdl.ge.com/AM-CDM-base#Person -->
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Person">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ProperName"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity"/>
     </rdf:Description>
     
 
