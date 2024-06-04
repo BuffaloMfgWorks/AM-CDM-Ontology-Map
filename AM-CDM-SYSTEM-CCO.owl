@@ -13,5 +13,7 @@
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/kaggour/AM-CDM/main/OwlModels/AM-CDM-system.owl">
         <owl:imports rdf:resource="https://raw.githubusercontent.com/kaggour/AM-CDM/main/OwlModels/AM-CDM-process.owl"/>
         <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/AM-CDM-BASE-CCO.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/AM-CDM-Process-CCO.owl"/>
     </owl:Ontology>
 </rdf:RDF>
