@@ -17,6 +17,56 @@
     </owl:Ontology>
 </rdf:RDF>
 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-build#BuildPlatform -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#BuildPlatform">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PartNumber"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-build#BuildSimulation -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#BuildSimulation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PredictiveInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-build#Part -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#Part">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PartNumber"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-build#PartDesign -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#PartDesign">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+    </rdf:Description>
+    
+
+    <!-- http://kdl.ge.com/AM-CDM-build#Project -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#Project">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
 <!-- http://www.ontologyrepository.com/CommonCoreOntologies/PlanSpecification -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PlanSpecification">
