@@ -50,6 +50,10 @@
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Country">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/LegalName"/>
     </rdf:Description>
+<rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Country">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/LegalName"/>
+    <rdfs:label>Country Name</rdfs:label>
+</rdf:Description>
     
 
 
@@ -91,7 +95,10 @@
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/LegalName"/>
     </rdf:Description>
     
-
+<rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Organization">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/LegalName"/>
+    <rdfs:label>Organization Name</rdfs:label>
+</rdf:Description>
 
     <!-- http://kdl.ge.com/AM-CDM-base#OrganizationType -->
 
