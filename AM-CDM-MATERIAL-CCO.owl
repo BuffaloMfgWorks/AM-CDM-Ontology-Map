@@ -29,6 +29,22 @@
     
 
 
+    <!-- http://kdl.ge.com/AM-CDM-material#Chemistry -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#Chemistry">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-material#ChemistryElement -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#ChemistryElement">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
     <!-- http://kdl.ge.com/AM-CDM-material#ChemistryPercentUnit -->
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#ChemistryPercentUnit">
@@ -37,10 +53,42 @@
     
 
 
+    <!-- http://kdl.ge.com/AM-CDM-material#Feedstock -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#Feedstock">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+    </rdf:Description>
+    
+
+
     <!-- http://kdl.ge.com/AM-CDM-material#MaterialProperties -->
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#MaterialProperties">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-material#MaterialSpecification -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#MaterialSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-material#PeriodicElement -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#PeriodicElement">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-material#PropertyDerivedBy -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#PropertyDerivedBy">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
     </rdf:Description>
 </rdf:RDF>
 
