@@ -66,6 +66,182 @@
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#Project">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PerformanceSpecification"/>
     </rdf:Description>
+
+<owl:Class rdf:about="#ProjectStandardsDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Project Standards Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#BuildPlatformIDDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Build Platform ID Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#SimulationIDDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Simulation ID Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#BuildPlatformCertificationDateDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Build Platform Certification Date Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#ProjectDeliveryDateDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Project Delivery Date Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#PartNameDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Part Name Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#BuildPlatformPreheatStrategyDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Build Platform Preheat Strategy Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#ModelDomainDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Model Domain Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#SynthesizedDataMethodDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Synthesized Data Method Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#MeasurementLocationDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Measurement Location Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#ProjectStartDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Project Start Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#BuildTypeDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Build Type Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#LayerNumberDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Layer Number Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#BuildNoteDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Build Note Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#InterruptionReasonDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Interruption Reason Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#ProjectDistributionStatementDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Project Distribution Statement Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#BuildIDDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Build ID Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#BuildPlatformMaterialGradeDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Build Platform Material Grade Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#BuildPlatformProcessingMethodsDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Build Platform Processing Methods Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#BuildPlatformLevelingMethodDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Build Platform Leveling Method Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#ProjectDistributionControlDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Project Distribution Control Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#DesignIDDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Design ID Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#PartRevNumberDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Part Revision Number Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#InterruptionHandlingDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Interruption Handling Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#BasePartOrientationDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Base Part Orientation Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#BuildInterruptionIDDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Build Interruption ID Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#CharacteristicsTypeDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Characteristics Type Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#MeasurementTypeDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Measurement Type Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#ProjectIDDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Project ID Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#BuildPlatformSurfaceFinishDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Build Platform Surface Finish Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#PartIDDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Part ID Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#ProjectEndDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Project End Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#EndTimeDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">End Time Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#StartTimeDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Start Time Document Field</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#PartCriticalityDocumentField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Part Criticality Document Field</rdfs:label>
+</owl:Class>
+
 </rdf:RDF>
 
 
