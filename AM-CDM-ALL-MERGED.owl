@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/carte/ontologies/2024/5/untitled-ontology-223#"
-     xml:base="http://www.semanticweb.org/carte/ontologies/2024/5/untitled-ontology-223"
+<rdf:RDF xmlns="http://www.semanticweb.org/AM-CDM-CCO-MERGED"
+     xml:base="http://www.semanticweb.org/AM-CDM-CCO-MERGED"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -10,7 +10,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/carte/ontologies/2024/5/untitled-ontology-223">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/AM-CDM-CCO-MERGED">
         <owl:imports rdf:resource="http://www.semanticweb.org/AM-CDM-BUILD-CCO"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/AM-CDM-MATERIAL-CCO"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/AM-CDM-PROCESS-CCO"/>
