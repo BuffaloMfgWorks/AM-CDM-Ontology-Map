@@ -35,6 +35,22 @@
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-process#ProcessSpecification">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
     </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-system#BuildVolume -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#BuildVolume">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-system#MachineCapability -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#MachineCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+    </rdf:Description>
 </rdf:RDF>
 
 
