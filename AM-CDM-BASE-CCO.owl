@@ -14,6 +14,10 @@
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/AM-CDM-BASE-CCO"/>
         <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/kaggour/AM-CDM/main/OwlModels/AM-CDM-base.owl"/>
+        <dc:contributor xml:lang="en">Alex Kitt</dc:contributor>
+        <dc:contributor xml:lang="en">Carter Benson</dc:contributor>
+        <dc:contributor xml:lang="en">Luke Mohr</dc:contributor>
+        <rdfs:comment xml:lang="en">This attifact contains a mapping between the AM-CDM and the Common Core Ontologies. The strategy deployed is to place each class from the data model into the appropriate child relation to an Information Content Entity from the Information Entity Ontology. All data properties in the CDM have been mapped to Information Bearing Entities, namely, Document Fields also from IEO.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -198,260 +202,386 @@
     
 
 
-    
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#AddressLine1DocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#AddressLine1DocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Address Line 1 Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#AddressLine2DocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#AddressLine2DocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Address Line 2 Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#CityDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#CityDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">City Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#CountryAlpha2CodeDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#CountryAlpha2CodeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Country Alpha-2 Code Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#CountryAlpha3CodeDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#CountryAlpha3CodeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Country Alpha-3 Code Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#CountryCallingCodeDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#CountryCallingCodeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Country Calling Code Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#CountryNameDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#CountryNameDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Country Name Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DataAggregationTechniqueDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DataAggregationTechniqueDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Data Aggregation Technique Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetCreationDateTimeDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetCreationDateTimeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Dataset Creation DateTime Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetFormatDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetFormatDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Dataset Format Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetIDDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetIDDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Dataset ID Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetKeyTagsDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetKeyTagsDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Dataset Key Tags Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetNameDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetNameDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Dataset Name Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetQuantityTypeDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetQuantityTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Dataset Quantity Type Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetSchemaURIDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetSchemaURIDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Dataset Schema URI Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetSubjectDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetSubjectDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Dataset Subject Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetTypeDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Dataset Type Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetURIDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DatasetURIDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Dataset URI Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DocumentClassificationIPClassDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DocumentClassificationIPClassDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Document Classification IP Class Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DocumentClassificationLevelDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DocumentClassificationLevelDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Document Classification Level Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DocumentFileNameDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DocumentFileNameDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Document File Name Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DocumentLocationDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DocumentLocationDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Document Location Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DocumentTitleDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DocumentTitleDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Document Title Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DocumentURIDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DocumentURIDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Document URI Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MaxValueDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MaxValueDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Max Value Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MeanValueDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MeanValueDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Mean Value Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MeasurementUnitDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MeasurementUnitDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Measurement Unit Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MeasurementValueDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MeasurementValueDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Measurement Value Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MedianValueDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MedianValueDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Median Value Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MinValueDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MinValueDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Min Value Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#ModeValueDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#ModeValueDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Mode Value Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#NumberOfValuesDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#NumberOfValuesDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Number Of Values Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PersonEmailDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PersonEmailDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Person Email Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PersonFirstNameDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PersonFirstNameDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Person First Name Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PersonFullNameDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PersonFullNameDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Person Full Name Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PersonIDDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PersonIDDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Person ID Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PersonLastNameDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PersonLastNameDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Person Last Name Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PersonQualificationNumberOfHoursDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PersonQualificationNumberOfHoursDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Person Qualification Number Of Hours Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PostalCodeDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PostalCodeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Postal Code Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#QualificationLevelDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#QualificationLevelDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Qualification Level Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#QualificationTypeDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#QualificationTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Qualification Type Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#StandardDeviationValueDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#StandardDeviationValueDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">Standard Deviation Value Document Field</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#StateProvinceDocumentField -->
+
     <owl:Class rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#StateProvinceDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">State Province Document Field</rdfs:label>
