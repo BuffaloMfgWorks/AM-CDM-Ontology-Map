@@ -16,7 +16,7 @@
         <owl:imports rdf:resource="http://www.semanticweb.org/AM-CDM-PROCESS-CCO"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/AM-CDM-TESTINSPECTIONCHARACTERISTICS-CCO"/>
-        <owl:imports rdf:resource="http://www.semanticweb.org/AMCDM-CCO"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/AM-CDM-BASE-CCO"/>
     </owl:Ontology>
 </rdf:RDF>
 
