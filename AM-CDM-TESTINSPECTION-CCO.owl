@@ -13,6 +13,10 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/AM-CDM-TESTINSPECTIONCHARACTERISTICS-CCO">
         <owl:imports rdf:resource="http://kdl.ge.com/AM-CDM-testInspectionCharacterization"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/AMCDM-CCO"/>
+        <dc:contributor xml:lang="en">Alex Kitt</dc:contributor>
+        <dc:contributor xml:lang="en">Carter Benson</dc:contributor>
+        <dc:contributor xml:lang="en">Luke Mohr</dc:contributor>
+        <rdfs:comment xml:lang="en">This attifact contains a mapping between the AM-CDM and the Common Core Ontologies. The strategy deployed is to place each class from the data model into the appropriate child relation to an Information Content Entity from the Information Entity Ontology. All data properties in the CDM have been mapped to Information Bearing Entities, namely, Document Fields also from IEO.</rdfs:comment>
     </owl:Ontology>
     
 
