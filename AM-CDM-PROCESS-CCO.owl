@@ -53,6 +53,146 @@
     </rdf:Description>
 </rdf:RDF>
 
+ <owl:Class rdf:about="#MaterialTypeNameDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">MaterialTypeNameDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#PsdPrincipleOfMeasurementDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">PsdPrincipleOfMeasurementDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#MinPercentDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">MinPercentDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#ElementSymbolDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">ElementSymbolDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#ReuseNumberDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">ReuseNumberDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#PsdScatteringModelDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">PsdScatteringModelDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#PurchaseOrderNumberDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">PurchaseOrderNumberDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#MaterialGradeDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">MaterialGradeDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#MaterialTypeDescriptionDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">MaterialTypeDescriptionDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#FeedstockIDDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">FeedstockIDDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#TensileTestControlModeDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">TensileTestControlModeDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#AtomicNumberDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">AtomicNumberDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#PsdIndexOfRefractionDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">PsdIndexOfRefractionDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#VirginOrUsedDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">VirginOrUsedDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#PsdDispersionMediumDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">PsdDispersionMediumDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#MixingMethodDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">MixingMethodDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#VendorManufacturingLotDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">VendorManufacturingLotDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#ChemistryMeasurementMethodDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">ChemistryMeasurementMethodDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#PsdDispersionTypeDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">PsdDispersionTypeDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#AvgPercentDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">AvgPercentDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#ElementNameDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">ElementNameDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#PsdDispersionMethodDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">PsdDispersionMethodDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#ParentFeedstockIDDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">ParentFeedstockIDDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#FeedstockCertificationDateDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">FeedstockCertificationDateDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#ParentFeedstockPercentDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">ParentFeedstockPercentDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#MaxPercentDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">MaxPercentDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#NumberReusedDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">NumberReusedDocumentField</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="#PsdParameterBasisDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">PsdParameterBasisDocumentField</rdfs:label>
+    </owl:Class>
+
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
