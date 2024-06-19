@@ -65,6 +65,48 @@
     <owl:Class rdf:about="http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TestType">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
     </owl:Class>
+
+<!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#TicIDDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#TicIDDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">ticID</rdfs:label>
+    </rdf:Description>
+
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#TicNotesDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#TicNotesDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">ticNotes</rdfs:label>
+    </rdf:Description>
+
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#SpecimenDescriptionDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#SpecimenDescriptionDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">specimenDescription</rdfs:label>
+    </rdf:Description>
+
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#IsPedigreedDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#IsPedigreedDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">isPedigreed</rdfs:label>
+    </rdf:Description>
+
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#TicNameDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#TicNameDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">ticName</rdfs:label>
+    </rdf:Description>
+
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#SpecimenIDDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#SpecimenIDDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">specimenID</rdfs:label>
+    </rdf:Description>
+
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#SpecimenDeviationsDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#SpecimenDeviationsDocumentField">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+        <rdfs:label xml:lang="en">specimenDeviations</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
