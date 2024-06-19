@@ -51,147 +51,175 @@
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#MachineCapability">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
     </rdf:Description>
-</rdf:RDF>
-
- <owl:Class rdf:about="#MaterialTypeNameDocumentField">
+<!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MaterialTypeNameDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MaterialTypeNameDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">MaterialTypeNameDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#PsdPrincipleOfMeasurementDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PsdPrincipleOfMeasurementDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PsdPrincipleOfMeasurementDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">PsdPrincipleOfMeasurementDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#MinPercentDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MinPercentDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MinPercentDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">MinPercentDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#ElementSymbolDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#ElementSymbolDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#ElementSymbolDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">ElementSymbolDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#ReuseNumberDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#ReuseNumberDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#ReuseNumberDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">ReuseNumberDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#PsdScatteringModelDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PsdScatteringModelDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PsdScatteringModelDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">PsdScatteringModelDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#PurchaseOrderNumberDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PurchaseOrderNumberDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PurchaseOrderNumberDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">PurchaseOrderNumberDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#MaterialGradeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MaterialGradeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MaterialGradeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">MaterialGradeDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#MaterialTypeDescriptionDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MaterialTypeDescriptionDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MaterialTypeDescriptionDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">MaterialTypeDescriptionDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#FeedstockIDDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#FeedstockIDDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#FeedstockIDDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">FeedstockIDDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#TensileTestControlModeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#TensileTestControlModeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#TensileTestControlModeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">TensileTestControlModeDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#AtomicNumberDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#AtomicNumberDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#AtomicNumberDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">AtomicNumberDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#PsdIndexOfRefractionDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PsdIndexOfRefractionDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PsdIndexOfRefractionDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">PsdIndexOfRefractionDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#VirginOrUsedDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#VirginOrUsedDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#VirginOrUsedDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">VirginOrUsedDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#PsdDispersionMediumDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PsdDispersionMediumDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PsdDispersionMediumDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">PsdDispersionMediumDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#MixingMethodDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MixingMethodDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MixingMethodDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">MixingMethodDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#VendorManufacturingLotDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#VendorManufacturingLotDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#VendorManufacturingLotDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">VendorManufacturingLotDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#ChemistryMeasurementMethodDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#ChemistryMeasurementMethodDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#ChemistryMeasurementMethodDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">ChemistryMeasurementMethodDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#PsdDispersionTypeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PsdDispersionTypeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PsdDispersionTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">PsdDispersionTypeDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#AvgPercentDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#AvgPercentDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#AvgPercentDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">AvgPercentDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#ElementNameDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#ElementNameDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#ElementNameDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">ElementNameDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#PsdDispersionMethodDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PsdDispersionMethodDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PsdDispersionMethodDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">PsdDispersionMethodDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#ParentFeedstockIDDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#ParentFeedstockIDDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#ParentFeedstockIDDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">ParentFeedstockIDDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#FeedstockCertificationDateDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#FeedstockCertificationDateDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#FeedstockCertificationDateDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">FeedstockCertificationDateDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#ParentFeedstockPercentDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#ParentFeedstockPercentDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#ParentFeedstockPercentDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">ParentFeedstockPercentDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#MaxPercentDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MaxPercentDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MaxPercentDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">MaxPercentDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#NumberReusedDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#NumberReusedDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#NumberReusedDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">NumberReusedDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
 
-    <owl:Class rdf:about="#PsdParameterBasisDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PsdParameterBasisDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PsdParameterBasisDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">PsdParameterBasisDocumentField</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
+</rdf:RDF>
+
 
 
 
