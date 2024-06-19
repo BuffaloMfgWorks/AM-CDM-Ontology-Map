@@ -43,338 +43,338 @@
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
     </rdf:Description>
 
-<!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MachineAcceptanceDateDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MachineAcceptanceDateDocumentField">
+<!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#MachineAcceptanceDateDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#MachineAcceptanceDateDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">MachineAcceptanceDateDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#SoftwareNameDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#SoftwareNameDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SoftwareNameDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SoftwareNameDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">SoftwareNameDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#BladeIDDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#BladeIDDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#BladeIDDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#BladeIDDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">BladeIDDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#RollerIDDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#RollerIDDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#RollerIDDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#RollerIDDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">RollerIDDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MachineHazmatRequirementsDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MachineHazmatRequirementsDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#MachineHazmatRequirementsDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#MachineHazmatRequirementsDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">MachineHazmatRequirementsDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#RecoatingSystemTypeDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#RecoatingSystemTypeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#RecoatingSystemTypeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#RecoatingSystemTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">RecoatingSystemTypeDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MachineLastCleanoutDateDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MachineLastCleanoutDateDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#MachineLastCleanoutDateDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#MachineLastCleanoutDateDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">MachineLastCleanoutDateDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#InSituMonitoringSystemSensingTypeDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#InSituMonitoringSystemSensingTypeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#InSituMonitoringSystemSensingTypeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#InSituMonitoringSystemSensingTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">InSituMonitoringSystemSensingTypeDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemInstallationQualificationDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemInstallationQualificationDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemInstallationQualificationDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemInstallationQualificationDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">SystemInstallationQualificationDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#SoftwareFileTypeDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#SoftwareFileTypeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SoftwareFileTypeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SoftwareFileTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">SoftwareFileTypeDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#GasFlowNozzleTypeDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#GasFlowNozzleTypeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#GasFlowNozzleTypeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#GasFlowNozzleTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">GasFlowNozzleTypeDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#LaserSystemSerialNumberDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#LaserSystemSerialNumberDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LaserSystemSerialNumberDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LaserSystemSerialNumberDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">LaserSystemSerialNumberDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#GalvoScannerCalibrationDateDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#GalvoScannerCalibrationDateDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#GalvoScannerCalibrationDateDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#GalvoScannerCalibrationDateDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">GalvoScannerCalibrationDateDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#CalibrationPassFailDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#CalibrationPassFailDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#CalibrationPassFailDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#CalibrationPassFailDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">CalibrationPassFailDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#ShieldingDeviceTypeDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#ShieldingDeviceTypeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#ShieldingDeviceTypeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#ShieldingDeviceTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">ShieldingDeviceTypeDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PhotodiodeModelDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PhotodiodeModelDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#PhotodiodeModelDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#PhotodiodeModelDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">PhotodiodeModelDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#LastCameraCalibrationDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#LastCameraCalibrationDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LastCameraCalibrationDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LastCameraCalibrationDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">LastCameraCalibrationDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#PyrometerModelDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#PyrometerModelDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#PyrometerModelDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#PyrometerModelDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">PyrometerModelDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemSubprocessTypeDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemSubprocessTypeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemSubprocessTypeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemSubprocessTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">SystemSubprocessTypeDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemPurchaseDateDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemPurchaseDateDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemPurchaseDateDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemPurchaseDateDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">SystemPurchaseDateDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#GalvoScannerTypeDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#GalvoScannerTypeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#GalvoScannerTypeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#GalvoScannerTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">GalvoScannerTypeDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#InSituMonitoringSystemTechnologyDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#InSituMonitoringSystemTechnologyDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#InSituMonitoringSystemTechnologyDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#InSituMonitoringSystemTechnologyDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">InSituMonitoringSystemTechnologyDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#FocusCorrectionTypeDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#FocusCorrectionTypeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#FocusCorrectionTypeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#FocusCorrectionTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">FocusCorrectionTypeDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#GalvoScannerManufacturerDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#GalvoScannerManufacturerDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#GalvoScannerManufacturerDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#GalvoScannerManufacturerDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">GalvoScannerManufacturerDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#CameraModelDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#CameraModelDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#CameraModelDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#CameraModelDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">CameraModelDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MaintenanceDateDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MaintenanceDateDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#MaintenanceDateDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#MaintenanceDateDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">MaintenanceDateDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemSerialNumberDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemSerialNumberDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemSerialNumberDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemSerialNumberDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">SystemSerialNumberDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#VolumeShapeDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#VolumeShapeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#VolumeShapeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#VolumeShapeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">VolumeShapeDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#LensManufacturerDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#LensManufacturerDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LensManufacturerDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LensManufacturerDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">LensManufacturerDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#LastPyrometerCalibrationDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#LastPyrometerCalibrationDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LastPyrometerCalibrationDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LastPyrometerCalibrationDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">LastPyrometerCalibrationDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#GalvoScannerModelDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#GalvoScannerModelDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#GalvoScannerModelDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#GalvoScannerModelDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">GalvoScannerModelDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#LaserModelNameDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#LaserModelNameDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LaserModelNameDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LaserModelNameDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">LaserModelNameDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#CalibrationIDDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#CalibrationIDDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#CalibrationIDDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#CalibrationIDDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">CalibrationIDDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#CalibrationDateDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#CalibrationDateDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#CalibrationDateDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#CalibrationDateDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">CalibrationDateDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#RecoatingMechanismTypeDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#RecoatingMechanismTypeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#RecoatingMechanismTypeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#RecoatingMechanismTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">RecoatingMechanismTypeDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemOperationQualificationDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemOperationQualificationDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemOperationQualificationDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemOperationQualificationDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">SystemOperationQualificationDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#RecoatingBladePartNumberDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#RecoatingBladePartNumberDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#RecoatingBladePartNumberDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#RecoatingBladePartNumberDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">RecoatingBladePartNumberDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemProcessTypeDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemProcessTypeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemProcessTypeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemProcessTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">SystemProcessTypeDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#ModeOfLaserOperationDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#ModeOfLaserOperationDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#ModeOfLaserOperationDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#ModeOfLaserOperationDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">ModeOfLaserOperationDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#LaserTypeDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#LaserTypeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LaserTypeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LaserTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">LaserTypeDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#RollerSpinDirectionDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#RollerSpinDirectionDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#RollerSpinDirectionDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#RollerSpinDirectionDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">RollerSpinDirectionDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#RecoaterMaxUsesAllowedDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#RecoaterMaxUsesAllowedDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#RecoaterMaxUsesAllowedDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#RecoaterMaxUsesAllowedDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">RecoaterMaxUsesAllowedDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemIDDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemIDDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemIDDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemIDDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">SystemIDDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemModelDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemModelDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemModelDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemModelDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">SystemModelDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemNameDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#SystemNameDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemNameDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SystemNameDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">SystemNameDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#SoftwareVersionDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#SoftwareVersionDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SoftwareVersionDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SoftwareVersionDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">SoftwareVersionDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#SoftwareIDDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#SoftwareIDDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SoftwareIDDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#SoftwareIDDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">SoftwareIDDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#LensOpticalMagnificationDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#LensOpticalMagnificationDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LensOpticalMagnificationDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LensOpticalMagnificationDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">LensOpticalMagnificationDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#CameraLensFilterDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#CameraLensFilterDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#CameraLensFilterDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#CameraLensFilterDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">CameraLensFilterDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#DateOfLastRollerCleaningDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#DateOfLastRollerCleaningDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#DateOfLastRollerCleaningDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#DateOfLastRollerCleaningDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">DateOfLastRollerCleaningDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#NumberOfLasersDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#NumberOfLasersDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#NumberOfLasersDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#NumberOfLasersDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">NumberOfLasersDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#ShieldingGasTypeDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#ShieldingGasTypeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#ShieldingGasTypeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#ShieldingGasTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">ShieldingGasTypeDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#LastPhotodiodeCalibrationDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#LastPhotodiodeCalibrationDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LastPhotodiodeCalibrationDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LastPhotodiodeCalibrationDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">LastPhotodiodeCalibrationDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#MachineCalibrationNotesDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#MachineCalibrationNotesDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#MachineCalibrationNotesDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#MachineCalibrationNotesDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">MachineCalibrationNotesDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#LaserBeamSpotSizeTypeDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#LaserBeamSpotSizeTypeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LaserBeamSpotSizeTypeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#LaserBeamSpotSizeTypeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">LaserBeamSpotSizeTypeDocumentField</rdfs:label>
     </rdf:Description>
 
-    <!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#BeamShapeDocumentField -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-BASE-CCO/#BeamShapeDocumentField">
+    <!-- http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#BeamShapeDocumentField -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/AM-CDM-SYSTEM-CCO/#BeamShapeDocumentField">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
         <rdfs:label xml:lang="en">BeamShapeDocumentField</rdfs:label>
     </rdf:Description>
