@@ -13,6 +13,10 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/AM-CDM-MATERIAL-CCO">
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/AM-CDM-BASE-CCO.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/kaggour/AM-CDM/main/OwlModels/AM-CDM-material.owl"/>
+        <dc:contributor xml:lang="en">Alex Kitt</dc:contributor>
+        <dc:contributor xml:lang="en">Carter Benson</dc:contributor>
+        <dc:contributor xml:lang="en">Luke Mohr</dc:contributor>
+        <rdfs:comment xml:lang="en">This attifact contains a mapping between the AM-CDM and the Common Core Ontologies. The strategy deployed is to place each class from the data model into the appropriate child relation to an Information Content Entity from the Information Entity Ontology. All data properties in the CDM have been mapped to Information Bearing Entities, namely, Document Fields also from IEO.</rdfs:comment>
     </owl:Ontology>
     
 
