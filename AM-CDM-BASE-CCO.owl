@@ -98,7 +98,7 @@
     <!-- http://kdl.ge.com/AM-CDM-base#Document -->
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Document">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentForm"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
         <rdfs:label xml:lang="en">AM-CDM-Document</rdfs:label>
     </rdf:Description>
     
