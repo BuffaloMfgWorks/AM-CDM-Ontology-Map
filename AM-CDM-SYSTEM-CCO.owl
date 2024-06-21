@@ -41,6 +41,14 @@
     
 
 
+    <!-- http://kdl.ge.com/AM-CDM-system#MaintenanceEvent -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#MaintenanceEvent">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
     <!-- http://kdl.ge.com/AM-CDM-system#Software -->
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#Software">
