@@ -99,7 +99,7 @@
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Document">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
-        <rdfs:label xml:lang="en">AM-CDM-Document</rdfs:label>
+        <rdfs:label xml:lang="en">Document Meta Data</rdfs:label>
     </rdf:Description>
     
 
@@ -141,6 +141,7 @@
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Person">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity"/>
+        <rdfs:label>Person Information</rdfs:label>
     </rdf:Description>
     
 
