@@ -11,12 +11,12 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/AM-CDM-CCO-MERGED">
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/folder/AM-CDM-BASE-CCO.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/folder/AM-CDM-MATERIAL-CCO.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/folder/AM-CDM-PROCESS-CCO.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/folder/AM-CDM-SYSTEM-CCO.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/folder/AM-CDM-TESTINSPECTION-CCO.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/folder/AM-CDM-BUILD-CCO.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-BASE-CCO.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-MATERIAL-CCO.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-PROCESS-CCO.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-SYSTEM-CCO.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-TESTINSPECTION-CCO.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-BUILD-CCO.owl"/>
     </owl:Ontology>
 </rdf:RDF>
 
