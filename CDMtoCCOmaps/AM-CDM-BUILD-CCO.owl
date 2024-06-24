@@ -11,8 +11,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/AM-CDM-BUILD-CCO">
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/folder/AM-CDM-BASE-CCO.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/folder/AM-CDM-MATERIAL-CCO.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-BASE-CCO.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-MATERIAL-CCO.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/kaggour/AM-CDM/main/OwlModels/AM-CDM-build.owl"/>
         <dc:contributor xml:lang="en">Alex Kitt</dc:contributor>
         <dc:contributor xml:lang="en">Carter Benson</dc:contributor>
