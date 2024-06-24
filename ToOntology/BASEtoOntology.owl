@@ -132,7 +132,7 @@
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
-                        <owl:someValuesFrom rdf:resource="http://kdl.ge.com/AM-CDM-base#Person"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -150,7 +150,7 @@
                     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Qualification"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
-                        <owl:someValuesFrom rdf:resource="http://kdl.ge.com/AM-CDM-base#Person"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
