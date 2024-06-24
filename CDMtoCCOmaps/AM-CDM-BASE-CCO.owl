@@ -193,6 +193,47 @@
         <rdfs:label xml:lang="en">Document Form</rdfs:label>
     </owl:Class>
     
+<!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#OrganizationIDField -->
+<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/OrganizationIDField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Organization ID Field</rdfs:label>
+</owl:Class>
+
+<!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#OrganizationNameField -->
+<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/OrganizationNameField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Organization Name Field</rdfs:label>
+</owl:Class>
+
+<!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#OrganizationTypeField -->
+<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/OrganizationTypeField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Organization Type Field</rdfs:label>
+</owl:Class>
+
+<!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#OrganizationQualificationField -->
+<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/OrganizationQualificationField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Organization Qualification Field</rdfs:label>
+</owl:Class>
+
+<!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#OrganizationAddressField -->
+<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/OrganizationAddressField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Organization Address Field</rdfs:label>
+</owl:Class>
+
+<!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#OrganizationPhoneNumberField -->
+<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/OrganizationPhoneNumberField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Organization Phone Number Field</rdfs:label>
+</owl:Class>
+
+<!-- http://www.semanticweb.org/AM-CDM-BASE-CCO/#OrganizationPointOfContactField -->
+<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/OrganizationPointOfContactField">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DocumentField"/>
+    <rdfs:label xml:lang="en">Organization Point of Contact Field</rdfs:label>
+</owl:Class>
 
 
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingArtifact -->
