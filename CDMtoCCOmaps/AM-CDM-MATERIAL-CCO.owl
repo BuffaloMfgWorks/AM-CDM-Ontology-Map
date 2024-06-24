@@ -83,7 +83,7 @@
     <!-- http://kdl.ge.com/AM-CDM-material#MaterialSpecification -->
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#MaterialSpecification">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
     </rdf:Description>
     
 
