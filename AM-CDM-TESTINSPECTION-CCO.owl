@@ -12,7 +12,7 @@
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/AM-CDM-TESTINSPECTIONCHARACTERISTICS-CCO">
         <owl:imports rdf:resource="https://raw.githubusercontent.com/kaggour/AM-CDM/main/OwlModels/AM-CDM-testInspectionCharacterization.owl"/>
-        <owl:imports rdf:resource="hhttps://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/AM-CDM-BASE-CCO.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/AM-CDM-BASE-CCO.owl"/>
         <dc:contributor xml:lang="en">Alex Kitt</dc:contributor>
         <dc:contributor xml:lang="en">Carter Benson</dc:contributor>
         <dc:contributor xml:lang="en">Luke Mohr</dc:contributor>
