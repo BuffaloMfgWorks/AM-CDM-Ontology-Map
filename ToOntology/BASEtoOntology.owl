@@ -12,7 +12,7 @@
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/BASEtoOntology">
         <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/AgentOntology"/>
-        <owl:imports rdf:resource="http://www.semanticweb.org/AM-CDM-BASE-CCO"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-BASE-CCO.owl"/>
     </owl:Ontology>
     
 
