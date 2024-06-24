@@ -80,10 +80,26 @@
     
 
 
+    <!-- http://kdl.ge.com/AM-CDM-material#MaterialPropertiesType -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#MaterialPropertiesType">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
     <!-- http://kdl.ge.com/AM-CDM-material#MaterialSpecification -->
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#MaterialSpecification">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-material#MaterialType -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#MaterialType">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
     </rdf:Description>
     
 
