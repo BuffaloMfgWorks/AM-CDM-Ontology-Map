@@ -13,53 +13,155 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/TESTINSPECTIONtoOntology">
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-TESTINSPECTION-CCO.owl"/>
     </owl:Ontology>
+    
 
 
-<!-- Act of Measuring -->
-<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring">
-    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct"/>
-    <rdfs:label xml:lang="en">Act of Measuring</rdfs:label>
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Planned Act that involves determining the extent, dimensions, quantity, or quality of an Entity relative to some standard.</rdfs:comment>
-    <rdfs:seeAlso rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
-    <rdfs:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">putting an object on a scale to measure its weight in kilograms</rdfs:example>
-    <rdfs:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rating Hollywood movies on a 1 to 5 star scale</rdfs:example>
-    <rdfs:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">using a tape measure to determine the height and width of a doorway in inches</rdfs:example>
-</owl:Class>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-<!-- Intentional Act -->
-<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct">
-    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Act"/>
-    <rdfs:label xml:lang="en">Planned Act</rdfs:label>
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Act in which at least one Agent plays a causative role and which is prescribed by some Directive Information Content Entity held by at least one of the Agents.</rdfs:comment>
-    <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
-    <rdfs:seeAlso xml:lang="en">Intentional Act</rdfs:seeAlso>
-</owl:Class>
+    
 
-<!-- Act -->
-<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Act">
-    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    <rdfs:label xml:lang="en">Act</rdfs:label>
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Process in which at least one Agent plays a causative role.</rdfs:comment>
-    <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
-</owl:Class>
 
-<!-- Act of Estimation -->
-<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfEstimation">
-    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
-    <rdfs:label xml:lang="en">Act of Estimation</rdfs:label>
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Act of Measuring that involves the comparison of a measurement of a similar Entity or of a portion of the Entity being estimated to produce an approximated measurement of the target Entity. In all cases, the Agent in an Act of Estimation either lacks complete information, lacks access to the relevant information, or chooses not to use the complete information (perhaps to save money or time) about the thing being estimated; instead, the Agent uses some or all of the relevant information that the Agent does have as a basis for arriving at the estimate.</rdfs:comment>
-    <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
-    <rdfs:seeAlso xml:lang="en">Act of Approximation</rdfs:seeAlso>
-</owl:Class>
+    <!-- http://www.w3.org/2000/01/rdf-schema#example -->
 
-<!-- Act of Appraisal -->
-<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfAppraisal">
-    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
-    <rdfs:label xml:lang="en">Act of Appraisal</rdfs:label>
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Act of Measuring that involves evaluating, assessing, estimating, or judging the nature, value, importance, condition, or quality of something or someone. In the context of an Act of Appraisal, the terms 'value', 'condition', and 'quality' do not have the same meanings as their counterparts that are defined in the Common Core Ontologies. For example, a knife may be appraised to be of high quality if it is sharp and sturdy or to be of inferior quality if it is dull or fragile.</rdfs:comment>
-    <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
-</owl:Class>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#example"/>
+    
 
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TICType -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TICType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TestResult -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TestResult">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_output_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TestType -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TestType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Act -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Act">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Process in which at least one Agent plays a causative role.</rdfs:comment>
+        <rdfs:label xml:lang="en">Act</rdfs:label>
+        <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ActOfAppraisal -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfAppraisal">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Act of Measuring that involves evaluating, assessing, estimating, or judging the nature, value, importance, condition, or quality of something or someone. In the context of an Act of Appraisal, the terms &apos;value&apos;, &apos;condition&apos;, and &apos;quality&apos; do not have the same meanings as their counterparts that are defined in the Common Core Ontologies. For example, a knife may be appraised to be of high quality if it is sharp and sturdy or to be of inferior quality if it is dull or fragile.</rdfs:comment>
+        <rdfs:label xml:lang="en">Act of Appraisal</rdfs:label>
+        <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ActOfEstimation -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfEstimation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Act of Measuring that involves the comparison of a measurement of a similar Entity or of a portion of the Entity being estimated to produce an approximated measurement of the target Entity. In all cases, the Agent in an Act of Estimation either lacks complete information, lacks access to the relevant information, or chooses not to use the complete information (perhaps to save money or time) about the thing being estimated; instead, the Agent uses some or all of the relevant information that the Agent does have as a basis for arriving at the estimate.</rdfs:comment>
+        <rdfs:label xml:lang="en">Act of Estimation</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">Act of Approximation</rdfs:seeAlso>
+        <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Planned Act that involves determining the extent, dimensions, quantity, or quality of an Entity relative to some standard.</rdfs:comment>
+        <rdfs:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">putting an object on a scale to measure its weight in kilograms</rdfs:example>
+        <rdfs:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rating Hollywood movies on a 1 to 5 star scale</rdfs:example>
+        <rdfs:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">using a tape measure to determine the height and width of a doorway in inches</rdfs:example>
+        <rdfs:label xml:lang="en">Act of Measuring</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Act"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Act in which at least one Agent plays a causative role and which is prescribed by some Directive Information Content Entity held by at least one of the Agents.</rdfs:comment>
+        <rdfs:label xml:lang="en">Planned Act</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">Intentional Act</rdfs:seeAlso>
+        <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
+    </owl:Class>
 </rdf:RDF>
+
+
+
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
