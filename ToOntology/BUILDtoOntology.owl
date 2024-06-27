@@ -35,7 +35,6 @@
         <rdfs:seeAlso xml:lang="en">Intentional Act</rdfs:seeAlso>
         <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
     </owl:Class>
-</rdf:RDF>
 
 <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Agent">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
