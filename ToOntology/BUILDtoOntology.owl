@@ -43,9 +43,30 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+<owl:Class rdf:about="http://www.semanticweb.org/BUILDtoOntology#ArtifactPart">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/BUILDtoOntology#Artifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/bears_role"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/BUILDtoOntology#PartRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
 
+    <owl:Class rdf:about="http://www.semanticweb.org/BUILDtoOntology#PartRole">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label>Part Role</rdfs:label>
+        <rdfs:comment>A Role that inheres in an entity in virtue of it being part of some other entity without being subject to further subdivision or disassembly without destruction of its designated use.</rdfs:comment>
+        <cco:definition_source rdf:resource="http://origins.sese.asu.edu/ses405/Class%20Notes/Sys-Hier-WBS_Module_V1.0_PAS.pdf"/>
+        <cco:is_curated_in_ontology rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology"/>
+    </owl:Class>
     
-
+<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Material Entity that was designed by some Agent to realize a certain Function.</rdfs:comment>
+        <rdfs:label xml:lang="en">Material Artifact</rdfs:label>
+        <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology"/>
+    </owl:Class>
 
     <!-- http://kdl.ge.com/AM-CDM-build#Project -->
 
