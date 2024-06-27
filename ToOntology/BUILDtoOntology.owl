@@ -105,11 +105,13 @@
         <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
     </owl:Class>
     
-
-
-    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Objective -->
-
-    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Objective"/>
+<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Objective">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+        <cco:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Directive Information Content Entity that prescribes some projected state that some Agent intends to achieve.</cco:definition>
+        <cco:definition_source rdf:resource="http://en.wikipedia.org/wiki/Objective_(goal)"/>
+        <cco:is_curated_in_ontology rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"/>
+        <rdfs:label xml:lang="en">Objective</rdfs:label>
+    </owl:Class>
     
 
 
