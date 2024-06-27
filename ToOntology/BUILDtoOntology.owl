@@ -1,36 +1,81 @@
+<?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/BUILDtoOntology#"
      xml:base="http://www.semanticweb.org/BUILDtoOntology"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:cco="http://www.ontologyrepository.com/CommonCoreOntologies/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:cco="http://www.ontologyrepository.com/CommonCoreOntologies/">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/BUILDtoOntology">
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-BUILD-CCO.owl"/>
     </owl:Ontology>
+    
 
 
-<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Act">
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/agent_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/agent_in"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-build#Project -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#Project">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PlanSpecification"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Act -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Act">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:comment>A Process in which at least one Agent plays a causative role.</rdfs:comment>
         <rdfs:label xml:lang="en">Act</rdfs:label>
         <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Act"/>
-        <rdfs:comment>An Act in which at least one Agent plays a causative role and which is prescribed by some Directive Information Content Entity held by at least one of the Agents.</rdfs:comment>
-        <rdfs:label xml:lang="en">Planned Act</rdfs:label>
-        <rdfs:seeAlso>Intentional Act</rdfs:seeAlso>
-        <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
-    </owl:Class>
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Agent -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Agent">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -42,10 +87,33 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <cco:definition>A Material Entity that is capable of performing Planned Acts</cco:definition>
         <cco:is_curated_in_ontology rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"/>
         <rdfs:label>Agent</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Act"/>
+        <rdfs:comment>An Act in which at least one Agent plays a causative role and which is prescribed by some Directive Information Content Entity held by at least one of the Agents.</rdfs:comment>
+        <rdfs:label xml:lang="en">Planned Act</rdfs:label>
+        <rdfs:seeAlso>Intentional Act</rdfs:seeAlso>
+        <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Objective -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Objective"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/PlanSpecification -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PlanSpecification">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
@@ -60,8 +128,9 @@
         <cco:is_curated_in_ontology rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"/>
         <rdfs:label>Plan</rdfs:label>
     </owl:Class>
-
 </rdf:RDF>
+
+
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
