@@ -76,7 +76,7 @@
     <!-- http://kdl.ge.com/AM-CDM-build#Project -->
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#Project">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PerformanceSpecification"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
     </rdf:Description>
     
 
