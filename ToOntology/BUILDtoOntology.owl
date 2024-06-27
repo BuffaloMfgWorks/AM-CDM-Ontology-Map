@@ -26,13 +26,22 @@
 
     
 
- <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/agent_in">
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/agent_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/agent_in">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
         <owl:inverseOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_agent"/>
         <cco:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x agent_in y iff y is an instance of Process and x is an instance of Agent, such that x is causally active in y.</cco:definition>
         <cco:is_curated_in_ontology rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"/>
         <rdfs:label xml:lang="en">agent in</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/has_agent -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_agent"/>
     
 
 
@@ -43,30 +52,27 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-<owl:Class rdf:about="http://www.semanticweb.org/BUILDtoOntology#ArtifactPart">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/BUILDtoOntology#Artifact"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/bears_role"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/BUILDtoOntology#PartRole"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
 
-    <owl:Class rdf:about="http://www.semanticweb.org/BUILDtoOntology#PartRole">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:label>Part Role</rdfs:label>
-        <rdfs:comment>A Role that inheres in an entity in virtue of it being part of some other entity without being subject to further subdivision or disassembly without destruction of its designated use.</rdfs:comment>
-        <cco:definition_source rdf:resource="http://origins.sese.asu.edu/ses405/Class%20Notes/Sys-Hier-WBS_Module_V1.0_PAS.pdf"/>
-        <cco:is_curated_in_ontology rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology"/>
-    </owl:Class>
     
-<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Material Entity that was designed by some Agent to realize a certain Function.</rdfs:comment>
-        <rdfs:label xml:lang="en">Material Artifact</rdfs:label>
-        <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology"/>
-    </owl:Class>
+
+
+    <!-- http://kdl.ge.com/AM-CDM-build#Part -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#Part">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/BUILDtoOntology#ArtifactPart"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
 
     <!-- http://kdl.ge.com/AM-CDM-build#Project -->
 
@@ -74,7 +80,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
                         <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PlanSpecification"/>
@@ -119,6 +125,17 @@
     
 
 
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Artifact -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Material Entity that was designed by some Agent to realize a certain Function.</rdfs:comment>
+        <rdfs:label xml:lang="en">Material Artifact</rdfs:label>
+        <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct">
@@ -129,7 +146,11 @@
         <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
     </owl:Class>
     
-<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Objective">
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Objective -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Objective">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
         <cco:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Directive Information Content Entity that prescribes some projected state that some Agent intends to achieve.</cco:definition>
         <cco:definition_source rdf:resource="http://en.wikipedia.org/wiki/Objective_(goal)"/>
@@ -153,6 +174,38 @@
         <cco:definition_source rdf:resource="https://en.wikipedia.org/w/index.php?title=Plan&amp;oldid=1047320560"/>
         <cco:is_curated_in_ontology rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"/>
         <rdfs:label>Plan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/BUILDtoOntology#ArtifactPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/BUILDtoOntology#ArtifactPart">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/BUILDtoOntology#PartRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+        <rdfs:label xml:lang="en">Material Part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/BUILDtoOntology#PartRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/BUILDtoOntology#PartRole">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <cco:definition_source rdf:resource="http://origins.sese.asu.edu/ses405/Class%20Notes/Sys-Hier-WBS_Module_V1.0_PAS.pdf"/>
+        <cco:is_curated_in_ontology rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology"/>
+        <rdfs:comment>A Role that inheres in an entity in virtue of it being part of some other entity without being subject to further subdivision or disassembly without destruction of its designated use.</rdfs:comment>
+        <rdfs:label>Part Role</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
