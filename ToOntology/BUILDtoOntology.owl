@@ -13,30 +13,24 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/BUILDtoOntology">
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-BUILD-CCO.owl"/>
     </owl:Ontology>
-</rdf:RDF>
 
 
-    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Act -->
-
-    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Act">
+<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Act">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Process in which at least one Agent plays a causative role.</rdfs:comment>
+        <rdfs:comment>A Process in which at least one Agent plays a causative role.</rdfs:comment>
         <rdfs:label xml:lang="en">Act</rdfs:label>
         <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
     </owl:Class>
-    
-
- <!-- http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Act"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Act in which at least one Agent plays a causative role and which is prescribed by some Directive Information Content Entity held by at least one of the Agents.</rdfs:comment>
+        <rdfs:comment>An Act in which at least one Agent plays a causative role and which is prescribed by some Directive Information Content Entity held by at least one of the Agents.</rdfs:comment>
         <rdfs:label xml:lang="en">Planned Act</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Intentional Act</rdfs:seeAlso>
+        <rdfs:seeAlso>Intentional Act</rdfs:seeAlso>
         <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
     </owl:Class>
 
-<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Agent">
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Agent">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <owl:equivalentClass>
             <owl:Class>
@@ -49,9 +43,9 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <cco:definition xml:lang="en">A Material Entity that is capable of performing Planned Acts</cco:definition>
+        <cco:definition>A Material Entity that is capable of performing Planned Acts</cco:definition>
         <cco:is_curated_in_ontology rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"/>
-        <rdfs:label xml:lang="en">Agent</rdfs:label>
+        <rdfs:label>Agent</rdfs:label>
     </owl:Class>
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PlanSpecification">
@@ -62,10 +56,10 @@
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Objective"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <cco:definition xml:lang="en">A Directive Information Content Entity that prescribes some set of intended Intentional Acts through which some Agent expects to achieve some Objective.</cco:definition>
+        <cco:definition>A Directive Information Content Entity that prescribes some set of intended Intentional Acts through which some Agent expects to achieve some Objective.</cco:definition>
         <cco:definition_source rdf:resource="https://en.wikipedia.org/w/index.php?title=Plan&amp;oldid=1047320560"/>
         <cco:is_curated_in_ontology rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"/>
-        <rdfs:label xml:lang="en">Plan</rdfs:label>
+        <rdfs:label>Plan</rdfs:label>
     </owl:Class>
 
 </rdf:RDF>
