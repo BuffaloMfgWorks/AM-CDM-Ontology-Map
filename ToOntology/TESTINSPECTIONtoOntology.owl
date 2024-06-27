@@ -31,7 +31,13 @@
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#example"/>
     
-
+ <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/agent_in">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+        <owl:inverseOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_agent"/>
+        <cco:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x agent_in y iff y is an instance of Process and x is an instance of Agent, such that x is causally active in y.</cco:definition>
+        <cco:is_curated_in_ontology rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"/>
+        <rdfs:label xml:lang="en">agent in</rdfs:label>
+    </owl:ObjectProperty>
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
