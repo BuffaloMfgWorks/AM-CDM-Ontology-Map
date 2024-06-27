@@ -60,7 +60,7 @@
     <!-- http://kdl.ge.com/AM-CDM-build#Part -->
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#Part">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PartNumber"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
     </rdf:Description>
     
 
@@ -76,7 +76,7 @@
     <!-- http://kdl.ge.com/AM-CDM-build#Project -->
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#Project">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DecriptiveInformationContentEntity"/>
     </rdf:Description>
     
 
