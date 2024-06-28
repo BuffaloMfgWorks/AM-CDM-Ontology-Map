@@ -117,7 +117,6 @@
         <cco:definition>An Act of Artifact Employment in which some Agent uses some Tool.</cco:definition>
         <rdfs:label>Act of Tool Use</rdfs:label>
     </owl:Class>
-</rdf:RDF>
 
     <!-- http://kdl.ge.com/AM-CDM-build#Part -->
 
