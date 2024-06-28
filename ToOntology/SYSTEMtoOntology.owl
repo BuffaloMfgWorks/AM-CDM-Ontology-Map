@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:cco="http://www.ontologyrepository.com/CommonCoreOntologies/">
+     xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/SYSTEMtoOntology">
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-SYSTEM-CCO.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/master/ArtifactOntology.ttl"/>
