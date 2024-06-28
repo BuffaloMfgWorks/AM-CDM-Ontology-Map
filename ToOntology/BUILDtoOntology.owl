@@ -80,11 +80,6 @@
         <rdfs:label>Act of Artifact Processing</rdfs:label>
     </owl:Class>
 
-    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfBuying">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfPurchasing"/>
-        <cco:definition>An Act of Purchasing wherein a Financial Instrument is used by an Agent (the Buyer) to acquire ownership of a good from another Agent (the Seller).</cco:definition>
-        <rdfs:label>Act of Buying</rdfs:label>
-    </owl:Class>
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfConstruction">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactProcessing"/>
