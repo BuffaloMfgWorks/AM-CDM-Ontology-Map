@@ -54,7 +54,70 @@
      -->
 
     
+<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactAssembly">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactProcessing"/>
+        <rdfs:comment>Many Acts of Manufacturing and Construction involve one or more Acts of Artifact Assembly, but Acts of Artifact Assembly can also occur in isolation from these activities.</rdfs:comment>
+        <cco:definition>An Act of Artifact Processing wherein a new Artifact is created by fitting component parts together.</cco:definition>
+        <rdfs:label>Act of Artifact Assembly</rdfs:label>
+    </owl:Class>
 
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactEmployment">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct"/>
+        <cco:definition>A Planned Act of using an Artifact.</cco:definition>
+        <rdfs:label>Act of Artifact Employment</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactModification">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactProcessing"/>
+        <rdfs:comment>Excluded from this class are instances of role change or role creation such as the introduction of an artifact as a piece of evidence in a trial or the loading of artifacts onto a ship for transport.</rdfs:comment>
+        <cco:definition>An Act of Artifact Processing in which an existing Artifact is acted upon in a manner that changes, adds, or removes one or more of its Qualities, Dispositions, or Functions.</cco:definition>
+        <rdfs:label>Act of Artifact Modification</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactProcessing">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct"/>
+        <cco:definition>A Planned Act of performing a series of mechanical or chemical operations on something in order to change or preserve it.</cco:definition>
+        <rdfs:label>Act of Artifact Processing</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfBuying">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfPurchasing"/>
+        <cco:definition>An Act of Purchasing wherein a Financial Instrument is used by an Agent (the Buyer) to acquire ownership of a good from another Agent (the Seller).</cco:definition>
+        <rdfs:label>Act of Buying</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfConstruction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactProcessing"/>
+        <rdfs:comment>An Act of Construction typically involves the production of only one or a limited number of goods, such as in the construction of an airport or a community of condominiums.</rdfs:comment>
+        <cco:definition>An Act of Artifact Processing wherein Artifacts are built on site as prescribed by some contract.</cco:definition>
+        <rdfs:label>Act of Construction</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfConsumption">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct"/>
+        <cco:definition>A Planned Act in which a resource is ingested or used up.</cco:definition>
+        <rdfs:label>Act of Consumption</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMaintenance">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactModification"/>
+        <cco:definition>An Act of Artifact Modification in which an Artifact is modified in order to preserve or restore one or more of its designed Qualities or Functions.</cco:definition>
+        <rdfs:label>Act of Maintenance</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactProcessing"/>
+        <rdfs:comment>An Act of Manufacturing typically involves the mass production of goods.</rdfs:comment>
+        <cco:definition>An Act of Artifact Processing wherein Artifacts are created in a Facility for the purpose of being sold to consumers.</cco:definition>
+        <rdfs:label>Act of Manufacturing</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfToolUse">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactEmployment"/>
+        <cco:definition>An Act of Artifact Employment in which some Agent uses some Tool.</cco:definition>
+        <rdfs:label>Act of Tool Use</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
 
     <!-- http://kdl.ge.com/AM-CDM-build#Part -->
 
