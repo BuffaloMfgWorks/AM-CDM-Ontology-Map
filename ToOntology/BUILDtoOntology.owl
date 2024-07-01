@@ -13,7 +13,7 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/BUILDtoOntology">
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-BUILD-CCO.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/Imports/Manufacturing.owl"/>
-        <owl:imports rdf:resource=https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/ToOntology/MATERIALtoOntology.owl/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/ToOntology/MATERIALtoOntology.owl"/>
     </owl:Ontology>
     
 
