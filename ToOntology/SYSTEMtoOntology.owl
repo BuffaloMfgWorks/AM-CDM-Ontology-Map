@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://www.semanticweb.org/SYSTEMtoOntology#"
      xml:base="http://www.semanticweb.org/SYSTEMtoOntology"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:cco="http://www.ontologyrepository.com/CommonCoreOntologies/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,12 +10,11 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:cco="http://www.ontologyrepository.com/CommonCoreOntologies/">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/SYSTEMtoOntology">
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-SYSTEM-CCO.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/Imports/Manufacturing.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/ToOntology/BUILDtoOntology.owl"/>
-     <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/Imports/Manufacturing.owl"/>
     </owl:Ontology>
     
 
@@ -51,6 +51,17 @@
     <!-- http://www.semanticweb.org/SYSTEMtoOntology/AMSystem -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/AMSystem">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/System"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
