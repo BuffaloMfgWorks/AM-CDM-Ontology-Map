@@ -27,36 +27,7 @@
      -->
 
     
-<owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMaintenance">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactModification"/>
-        <cco:definition>An Act of Artifact Modification in which an Artifact is modified in order to preserve or restore one or more of its designed Qualities or Functions.</cco:definition>
-        <rdfs:label>Act of Maintenance</rdfs:label>
 
- <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactModification">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactProcessing"/>
-        <rdfs:comment>Excluded from this class are instances of role change or role creation such as the introduction of an artifact as a piece of evidence in a trial or the loading of artifacts onto a ship for transport.</rdfs:comment>
-        <cco:definition>An Act of Artifact Processing in which an existing Artifact is acted upon in a manner that changes, adds, or removes one or more of its Qualities, Dispositions, or Functions.</cco:definition>
-        <rdfs:label>Act of Artifact Modification</rdfs:label>
-    </owl:Class>
-
-  <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Act -->
-
-    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Act">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:comment>A Process in which at least one Agent plays a causative role.</rdfs:comment>
-        <rdfs:label xml:lang="en">Act</rdfs:label>
-        <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
-    </owl:Class>
-
- <!-- http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct -->
-
-    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Act"/>
-        <rdfs:comment>An Act in which at least one Agent plays a causative role and which is prescribed by some Directive Information Content Entity held by at least one of the Agents.</rdfs:comment>
-        <rdfs:label xml:lang="en">Planned Act</rdfs:label>
-        <rdfs:seeAlso>Intentional Act</rdfs:seeAlso>
-        <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
-    </owl:Class>
 
     <!-- http://kdl.ge.com/AM-CDM-system#System -->
 
