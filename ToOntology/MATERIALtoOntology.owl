@@ -12,8 +12,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/MATERIALtoOntology">
-         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/Imports/Manufacturing.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-MATERIAL-CCO.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/Imports/Manufacturing.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/ToOntology/BASEtoOntology.owl"/>
     </owl:Ontology>
     
@@ -39,7 +39,7 @@
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
-                        <owl:someValuesFrom rdf:resource="http://kdl.ge.com/AM-CDM-material#Feedstock"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -57,7 +57,7 @@
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carte/ontologies/2024/5/untitled-ontology-241/AdditiveManufacturingFeedStock"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -93,7 +93,7 @@
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
-                        <owl:someValuesFrom rdf:resource="http://kdl.ge.com/AM-CDM-material#Feedstock"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfMaterial"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -102,11 +102,94 @@
     
 
 
-    <!-- http://www.semanticweb.org/carte/ontologies/2024/5/untitled-ontology-241/AdditiveManufacturingFeedStock -->
+    <!-- http://kdl.ge.com/AM-CDM-material#ParentFeedstock -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/carte/ontologies/2024/5/untitled-ontology-241/AdditiveManufacturingFeedStock">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
-        <rdfs:label>Feedstock</rdfs:label>
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#ParentFeedstock">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofReusedFeedstock"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-material#PowderLot -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#PowderLot">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#Feedstock"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofPowder"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/MATERIALtoOntology/PortionofBulkSolid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofBulkSolid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+        <rdfs:label xml:lang="en">Portion of Bulk Solid Feedstock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfMaterial"/>
+        <rdfs:label xml:lang="en">Portion of Feedstock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MATERIALtoOntology/PortionofPowder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofPowder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+        <rdfs:label xml:lang="en">Portion of Powder Feedstock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MATERIALtoOntology/PortionofReusedFeedstock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofReusedFeedstock">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_output_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+        <rdfs:label xml:lang="en">Portion of Reused Feedstock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MATERIALtoOntology/PortionofWire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofWire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+        <rdfs:label xml:lang="en">Portion of Wire Feedstock</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
