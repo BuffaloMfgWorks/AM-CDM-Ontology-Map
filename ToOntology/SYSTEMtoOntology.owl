@@ -204,6 +204,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/SYSTEMtoOntology/Subsystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/Subsystem">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/System"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComponentRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SYSTEMtoOntology/System"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/SYSTEMtoOntology/System -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/System">
