@@ -77,19 +77,6 @@
             </owl:Class>
         </owl:equivalentClass>
     </rdf:Description>
-    
-
-
-    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Act -->
-
-    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Act">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Process in which at least one Agent plays a causative role.</rdfs:comment>
-        <rdfs:label xml:lang="en">Act</rdfs:label>
-        <owl:versionInfo rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"/>
-    </owl:Class>
-    
-
 
 
 
