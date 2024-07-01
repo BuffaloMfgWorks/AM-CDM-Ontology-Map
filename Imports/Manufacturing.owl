@@ -3667,19 +3667,6 @@
         <cco:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology</cco:is_curated_in_ontology>
         <rdfs:label xml:lang="en">Covering Artifact Function</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/CriminalAct -->
-
-    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CriminalAct">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct"/>
-        <cco:definition xml:lang="en">A Planned Act committed in violation of rules or laws for which some governing authority (via mechanisms such as legal systems) can prescribe a conviction.</cco:definition>
-        <cco:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/w/index.php?title=Crime&amp;oldid=1062237249</cco:definition_source>
-        <cco:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology</cco:is_curated_in_ontology>
-        <rdfs:label xml:lang="en">Criminal Act</rdfs:label>
-    </owl:Class>
-    
 
 
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/CrushingArtifactFunction -->
