@@ -262,7 +262,7 @@
     </owl:equivalentClass>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SYSTEMtoOntology/System"/>
     <rdfs:label xml:lang="en">Subsystem</rdfs:label>
-    <cco:definition>A System that bears some Component Role within a system.</cco:definition>
+    <cco:definition>A System that bears some Component Role.</cco:definition>
     <rdfs:comment>This class represents systems that function as components or parts of larger systems, providing specific functionalities within the larger context.</rdfs:comment>
 </owl:Class>
 
