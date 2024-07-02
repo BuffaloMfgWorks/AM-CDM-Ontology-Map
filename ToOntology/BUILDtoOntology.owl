@@ -44,7 +44,7 @@
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology#ArtifactPart"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/ArtifactPart"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
