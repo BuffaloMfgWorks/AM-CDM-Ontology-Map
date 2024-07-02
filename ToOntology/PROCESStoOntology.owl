@@ -12,7 +12,7 @@
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/PROCESStoOntology">
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-PROCESS-CCO.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/Imports/AdditiveManufacturingOntology.owl"/>
+        <https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/ToOntology/BASEtoOntology.owl"/>
         <dc:contributor xml:lang="en">Alex Kitt</dc:contributor>
         <dc:contributor xml:lang="en">Carter Benson</dc:contributor>
         <dc:contributor xml:lang="en">Luke Mohr</dc:contributor>
