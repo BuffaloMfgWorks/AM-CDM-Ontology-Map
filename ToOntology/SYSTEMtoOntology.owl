@@ -44,7 +44,7 @@
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofFeedstock"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
