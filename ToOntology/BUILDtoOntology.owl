@@ -84,17 +84,6 @@
         <rdfs:label xml:lang="en">Material Part</rdfs:label>
     </owl:Class>
     
-
-
-    <!-- http://www.semanticweb.org/BUILDtoOntology#PartRole -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/BUILDtoOntology#PartRole">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <cco:definition_source rdf:resource="http://origins.sese.asu.edu/ses405/Class%20Notes/Sys-Hier-WBS_Module_V1.0_PAS.pdf"/>
-        <cco:is_curated_in_ontology rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology"/>
-        <rdfs:comment>A Role that inheres in an entity in virtue of it being part of some other entity without being subject to further subdivision or disassembly without destruction of its designated use.</rdfs:comment>
-        <rdfs:label>Part Role</rdfs:label>
-    </owl:Class>
     
 
 
