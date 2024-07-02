@@ -19,16 +19,16 @@
     </owl:Ontology>
 
 
-    <!-- http://www.semanticweb.org/BUILDtoOntology/ActOfAdditiveManufacturing -->
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/ActOfAdditiveManufacturing -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/BUILDtoOntology/ActOfAdditiveManufacturing">
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/ActOfAdditiveManufacturing">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_input"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org//PortionofFeedstock"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -40,8 +40,8 @@
         <rdfs:label xml:lang="en">Act of Additive Manufacturing</rdfs:label>
     </owl:Class>
 
- <owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofBulkSolid">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+ <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofBulkSolid">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofFeedstock"/>
     <rdfs:label xml:lang="en">Portion of Bulk Solid Feedstock</rdfs:label>
     <cco:definition>A Portion Of Feedstock that consists of bulk solid material.</cco:definition>
     <rdfs:comment>This class represents a bulk solid form of feedstock used in manufacturing processes.</rdfs:comment>
@@ -49,7 +49,7 @@
 
 
 
- <owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock">
+ <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofFeedstock">
     <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfMaterial"/>
     <rdfs:label xml:lang="en">Portion of Feedstock</rdfs:label>
     <cco:definition>A Portion Of Material that serves as input material in a manufacturing processes.</cco:definition>
@@ -58,8 +58,8 @@
     
 
 
-  <owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofPowder">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofPowder">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofFeedstock"/>
     <rdfs:label xml:lang="en">Portion of Powder Feedstock</rdfs:label>
     <cco:definition>A PortionOfFeedstock that consists of powder material.</cco:definition>
     <rdfs:comment>This class represents a powder form of feedstock used in additive manufacturing and other processes.</rdfs:comment>
@@ -67,11 +67,11 @@
 
 
 
-<owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofReusedFeedstock">
+<owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofReusedFeedstock">
     <owl:equivalentClass>
         <owl:Class>
             <owl:intersectionOf rdf:parseType="Collection">
-                <rdf:Description rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+                <rdf:Description rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofFeedstock"/>
                 <owl:Restriction>
                     <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_output_of"/>
                     <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing"/>
@@ -79,7 +79,7 @@
             </owl:intersectionOf>
         </owl:Class>
     </owl:equivalentClass>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofFeedstock"/>
     <rdfs:label xml:lang="en">Portion of Reused Feedstock</rdfs:label>
     <cco:definition>A Portion Of Feedstock that is a reused output from a previous Act Of Manufacturing.</cco:definition>
     <rdfs:comment>This class represents feedstock that has been reused from previous manufacturing processes.</rdfs:comment>
@@ -87,20 +87,20 @@
 
 
 
-<owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofWire">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+<owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofWire">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofFeedstock"/>
     <rdfs:label xml:lang="en">Portion of Wire Feedstock</rdfs:label>
     <cco:definition>A PortionOfFeedstock that consists of wire material.</cco:definition>
     <rdfs:comment>This class represents a wire form of feedstock used in manufacturing processes such as wire arc additive manufacturing.</rdfs:comment>
 </owl:Class>
 
-  <!-- http://www.semanticweb.org/SYSTEMtoOntology/AMSubsystem -->
+  <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/AMSubsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/AMSubsystem">
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/AMSubsystem">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/System"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
                         <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComponentRole"/>
@@ -108,7 +108,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SYSTEMtoOntology/System"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
         <cco:definition>A System that bears some Component Role within an Additive Manufacturing System.</cco:definition>
         <rdfs:comment>This class represents subsystems within an Additive Manufacturing System, such as a laser system in a selective laser sintering machine or an extruder in a fused deposition modeling printer, which are essential for the system&apos;s operation and success in manufacturing processes.</rdfs:comment>
         <rdfs:label xml:lang="en">Additive Manufacturing Subsystem</rdfs:label>
@@ -116,16 +116,16 @@
     
 
 
-    <!-- http://www.semanticweb.org/SYSTEMtoOntology/AMSystem -->
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/AMSystem">
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystem">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/System"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/SYSTEMtoOntology/AMSystemRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystemRole"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -133,15 +133,15 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/System"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/agent_in"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/BUILDtoOntology/ActOfAdditiveManufacturing"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/ActOfAdditiveManufacturing"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SYSTEMtoOntology/System"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
         <cco:definition>A System that is an agent in an Act Of Additive Manufacturing and is the bearer of some AM System Role.</cco:definition>
         <rdfs:comment>This class represents systems specifically designed to carry out additive manufacturing processes, often involving the deposition of materials layer by layer to form objects.</rdfs:comment>
         <rdfs:label xml:lang="en">Additive Manufacturing System</rdfs:label>
@@ -149,9 +149,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/SYSTEMtoOntology/AMSystemRole -->
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystemRole -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/AMSystemRole">
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystemRole">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/SystemRole"/>
         <cco:definition>A System Role that inheres in some object aggregate that, if realized, is realized when the system performs an Act Of Additive Manufacturing through the coordinated operation of its components.</cco:definition>
         <rdfs:comment>This role is designated for systems that facilitate the additive manufacturing process, ensuring the coordination and functionality of the system&apos;s components to produce objects through layer-by-layer material deposition.</rdfs:comment>
@@ -160,9 +160,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/SYSTEMtoOntology/InSituMonitoringAct -->
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/InSituMonitoringAct -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/InSituMonitoringAct">
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/InSituMonitoringAct">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -182,13 +182,13 @@
     
 
 
-    <!-- http://www.semanticweb.org/SYSTEMtoOntology/InSituMonitoringSystem -->
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/InSituMonitoringSystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/InSituMonitoringSystem">
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/InSituMonitoringSystem">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/System"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
                         <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementArtifactFunction"/>
@@ -199,15 +199,15 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/System"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/agent_in"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/SYSTEMtoOntology/InSituMonitoringAct"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/InSituMonitoringAct"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SYSTEMtoOntology/System"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
         <cco:definition>A System that is an agent in some In-Situ Monitoring Act and bears some quality control function.</cco:definition>
         <rdfs:comment>This class includes systems used for continuous observation and measurement within different processes, such as manufacturing, scientific experiments, or environmental monitoring, to provide immediate feedback and control.</rdfs:comment>
         <rdfs:label xml:lang="en">In-Situ Monitoring System</rdfs:label>
@@ -215,13 +215,13 @@
     
 
 
-    <!-- http://www.semanticweb.org/SYSTEMtoOntology/Subsystem -->
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/Subsystem">
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/Subsystem">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/System"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
                         <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComponentRole"/>
@@ -229,7 +229,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SYSTEMtoOntology/System"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
         <cco:definition>A System that bears some Component Role.</cco:definition>
         <rdfs:comment>This class represents systems that function as components or parts of larger systems, providing specific functionalities within the larger context.</rdfs:comment>
         <rdfs:label xml:lang="en">Subsystem</rdfs:label>
@@ -237,9 +237,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/SYSTEMtoOntology/System -->
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/System -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/SYSTEMtoOntology/System">
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/System">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
