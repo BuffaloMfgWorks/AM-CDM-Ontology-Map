@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/carte/ontologies/2024/5/untitled-ontology-241/"
-     xml:base="http://www.semanticweb.org/carte/ontologies/2024/5/untitled-ontology-241/"
+<rdf:RDF xmlns="http://www.semanticweb.org/MATERIALtoOntology"
+     xml:base="http://www.semanticweb.org/MATERIALtoOntology"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -39,7 +39,7 @@
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofFeedstock"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -57,7 +57,7 @@
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofFeedstock"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -111,7 +111,7 @@
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofReusedFeedstock"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofReusedFeedstock"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -129,7 +129,7 @@
                     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#Feedstock"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofPowder"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofPowder"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
