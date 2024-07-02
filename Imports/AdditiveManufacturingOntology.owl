@@ -28,7 +28,7 @@
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_input"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org//PortionofFeedstock"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofFeedstock"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
