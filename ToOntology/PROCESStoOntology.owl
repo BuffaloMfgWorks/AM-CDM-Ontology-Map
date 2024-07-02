@@ -13,6 +13,10 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/PROCESStoOntology">
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-PROCESS-CCO.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/Imports/AdditiveManufacturingOntology.owl"/>
+        <dc:contributor xml:lang="en">Alex Kitt</dc:contributor>
+        <dc:contributor xml:lang="en">Carter Benson</dc:contributor>
+        <dc:contributor xml:lang="en">Luke Mohr</dc:contributor>
+        <rdfs:comment xml:lang="en">This attifact contains a the aboutness relations between the AM-CDM and a Manufacturing Ontology built out of the Common Core Ontologies</rdfs:comment>
     </owl:Ontology>
 </rdf:RDF>
 
