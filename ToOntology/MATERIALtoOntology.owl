@@ -138,60 +138,59 @@
     
 
 
-    <!-- http://www.semanticweb.org/MATERIALtoOntology/PortionofBulkSolid -->
+   <owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofBulkSolid">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+    <rdfs:label xml:lang="en">Portion of Bulk Solid Feedstock</rdfs:label>
+    <cco:definition>A Portion Of Feedstock that consists of bulk solid material.</cco:definition>
+    <rdfs:comment>This class represents a bulk solid form of feedstock used in manufacturing processes.</rdfs:comment>
+</owl:Class>
 
-    <owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofBulkSolid">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
-        <rdfs:label xml:lang="en">Portion of Bulk Solid Feedstock</rdfs:label>
-    </owl:Class>
+
+
+ <owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfMaterial"/>
+    <rdfs:label xml:lang="en">Portion of Feedstock</rdfs:label>
+    <cco:definition>A Portion Of Material that serves as input material in a manufacturing processes.</cco:definition>
+    <rdfs:comment>This class represents any material portion used as feedstock in various manufacturing processes.</rdfs:comment>
+</owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfMaterial"/>
-        <rdfs:label xml:lang="en">Portion of Feedstock</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/MATERIALtoOntology/PortionofPowder -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofPowder">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
-        <rdfs:label xml:lang="en">Portion of Powder Feedstock</rdfs:label>
-    </owl:Class>
-    
+  <owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofPowder">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+    <rdfs:label xml:lang="en">Portion of Powder Feedstock</rdfs:label>
+    <cco:definition>A PortionOfFeedstock that consists of powder material.</cco:definition>
+    <rdfs:comment>This class represents a powder form of feedstock used in additive manufacturing and other processes.</rdfs:comment>
+</owl:Class>
 
 
-    <!-- http://www.semanticweb.org/MATERIALtoOntology/PortionofReusedFeedstock -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofReusedFeedstock">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_output_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
-        <rdfs:label xml:lang="en">Portion of Reused Feedstock</rdfs:label>
-    </owl:Class>
-    
+<owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofReusedFeedstock">
+    <owl:equivalentClass>
+        <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+                <rdf:Description rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_output_of"/>
+                    <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing"/>
+                </owl:Restriction>
+            </owl:intersectionOf>
+        </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+    <rdfs:label xml:lang="en">Portion of Reused Feedstock</rdfs:label>
+    <cco:definition>A Portion Of Feedstock that is a reused output from a previous Act Of Manufacturing.</cco:definition>
+    <rdfs:comment>This class represents feedstock that has been reused from previous manufacturing processes.</rdfs:comment>
+</owl:Class>
 
 
-    <!-- http://www.semanticweb.org/MATERIALtoOntology/PortionofWire -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofWire">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
-        <rdfs:label xml:lang="en">Portion of Wire Feedstock</rdfs:label>
-    </owl:Class>
-</rdf:RDF>
+<owl:Class rdf:about="http://www.semanticweb.org/MATERIALtoOntology/PortionofWire">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MATERIALtoOntology/PortionofFeedstock"/>
+    <rdfs:label xml:lang="en">Portion of Wire Feedstock</rdfs:label>
+    <cco:definition>A PortionOfFeedstock that consists of wire material.</cco:definition>
+    <rdfs:comment>This class represents a wire form of feedstock used in manufacturing processes such as wire arc additive manufacturing.</rdfs:comment>
+</owl:Class>
 
 
 
