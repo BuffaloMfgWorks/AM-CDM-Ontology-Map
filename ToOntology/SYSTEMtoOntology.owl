@@ -129,7 +129,7 @@
                     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#MaintenanceEvent"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/SYSTEMtoOntology/System"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
