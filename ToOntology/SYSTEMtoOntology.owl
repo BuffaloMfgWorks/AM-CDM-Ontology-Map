@@ -69,6 +69,24 @@
     
 
 
+    <!-- http://kdl.ge.com/AM-CDM-system#InSituMonitoringSystem -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#InSituMonitoringSystem">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#System"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/InSituMonitoringSystem"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
     <!-- http://kdl.ge.com/AM-CDM-system#LaserSystem -->
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#LaserSystem">
@@ -95,8 +113,44 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_output_of"/>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
                         <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMaintenance"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-system#NonAMSystem -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#NonAMSystem">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#System"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+                        <owl:someValuesFrom rdf:resource="http://kdl.ge.com/AM-CDM-system#System"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-system#SpecificSubsystem -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#SpecificSubsystem">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/Subsystem"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -114,11 +168,12 @@
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
-                        <owl:someValuesFrom rdf:resource="http://kdl.ge.com/AM-CDM-system#System"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Sysyem Information</rdfs:label>
     </rdf:Description>
     
 
@@ -138,7 +193,6 @@
             </owl:Class>
         </owl:equivalentClass>
     </rdf:Description>
-    
 </rdf:RDF>
 
 
