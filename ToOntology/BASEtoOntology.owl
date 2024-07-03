@@ -13,6 +13,7 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/BASEtoOntology">
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/CDMtoCCOmaps/AM-CDM-BASE-CCO.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/Imports/AdditiveManufacturingOntology.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/Imports/Manufacturing.owl"/>
         <dc:contributor xml:lang="en">Alex Kitt</dc:contributor>
         <dc:contributor xml:lang="en">Carter Benson</dc:contributor>
         <dc:contributor xml:lang="en">Luke Mohr</dc:contributor>
