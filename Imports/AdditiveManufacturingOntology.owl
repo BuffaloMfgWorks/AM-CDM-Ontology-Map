@@ -112,10 +112,51 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing"/>
-        <cco:definition>An ActOfManufacturing that involves the deposition of successive layers of material to create an object, using a PortionofFeedstock as input.</cco:definition>
+        <cco:definition>An Act Of Manufacturing that involves the deposition of successive layers of material to create an object, using a PortionofFeedstock as input.</cco:definition>
         <cco:example_of_usage>Examples include 3D printing processes such as Fused Deposition Modeling (FDM), Selective Laser Sintering (SLS), and Stereolithography (SLA).</cco:example_of_usage>
         <rdfs:comment>This process typically involves the use of digital models to direct machinery in the layer-by-layer addition of material, resulting in a three-dimensional object. It is distinct from subtractive manufacturing, which removes material to form an object.</rdfs:comment>
         <rdfs:label xml:lang="en">Act of Additive Manufacturing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/AdditiveManufacturingBuildSite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/AdditiveManufacturingBuildSite">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildChamber"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <cco:definition xml:lang="en">a site within a build chamber where the additive manufacturing process occurs.</cco:definition>
+        <rdfs:label xml:lang="en">Additive Manufacturing Build Site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/AdditiveManufacturingFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/AdditiveManufacturingFacility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/ManufacturingFacility"/>
+        <cco:definition xml:lang="en">a manufacturing facility that is designed for the production of goods using some additive manufacturing act</cco:definition>
+        <rdfs:comment xml:lang="en">Note that it is often the case that subtractive manufacturing often occurs at additive manufacturing facilities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/BuildChamber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildChamber">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+        <cco:definition_source xml:lang="en">A build chamber is a material artifact that is designed to contain a site where some controlled manufacturing process occures</cco:definition_source>
+        <rdfs:label xml:lang="en">Build Chamber</rdfs:label>
     </owl:Class>
     
 
@@ -171,6 +212,15 @@
         <cco:definition>A System that is an agent in some In-Situ Monitoring Act and bears some quality control function.</cco:definition>
         <rdfs:comment>This class includes systems used for continuous observation and measurement within different processes, such as manufacturing, scientific experiments, or environmental monitoring, to provide immediate feedback and control.</rdfs:comment>
         <rdfs:label xml:lang="en">In-Situ Monitoring System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/ManufacturingFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/ManufacturingFacility">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Factory"/>
+        <cco:definition xml:lang="en">A factory that is designed for the production of goods</cco:definition>
     </owl:Class>
     
 
@@ -281,6 +331,15 @@
         <cco:definition>A System that bears some Component Role.</cco:definition>
         <rdfs:comment>This class represents systems that function as components or parts of larger systems, providing specific functionalities within the larger context.</rdfs:comment>
         <rdfs:label xml:lang="en">Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/SubtractiveManufacturingFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/SubtractiveManufacturingFacility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/ManufacturingFacility"/>
+        <cco:definition xml:lang="en">a manufacturing facility that is designed for the production of goods using some subtractive manufacturing act.</cco:definition>
     </owl:Class>
     
 
