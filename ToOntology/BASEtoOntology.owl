@@ -35,135 +35,96 @@
 
     <!-- http://kdl.ge.com/AM-CDM-base#Address -->
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Address">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
-                                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Organization"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
-                                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-base#Address">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity"/>
+    <rdfs:subClassOf>
+        <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
+                    <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Organization"/>
+                </owl:Restriction>
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
+                    <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
+                </owl:Restriction>
+            </owl:unionOf>
+        </owl:Class>
+    </rdfs:subClassOf>
+</owl:Class>
 
+<!-- http://kdl.ge.com/AM-CDM-base#DatasetMetadata -->
 
-    <!-- http://kdl.ge.com/AM-CDM-base#DatasetMetadata -->
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-base#DatasetMetadata">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+            <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#DatasetMetadata">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
-                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<!-- http://kdl.ge.com/AM-CDM-base#Document -->
 
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-base#Document">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+            <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Document"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-    <!-- http://kdl.ge.com/AM-CDM-base#Document -->
+<!-- http://kdl.ge.com/AM-CDM-base#OrganizationQualification -->
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Document">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
-                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Document"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-base#OrganizationQualification">
+    <rdfs:subClassOf rdf:resource="http://kdl.ge.com/AM-CDM-base#Qualification"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
+            <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Organization"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
+<!-- http://kdl.ge.com/AM-CDM-base#OrganizationType -->
 
-    <!-- http://kdl.ge.com/AM-CDM-base#OrganizationQualification -->
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-base#OrganizationType">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
+            <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Organization"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#OrganizationQualification">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Qualification"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Organization"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<!-- http://kdl.ge.com/AM-CDM-base#Person -->
 
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-base#Person">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
+            <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-    <!-- http://kdl.ge.com/AM-CDM-base#OrganizationType -->
+<!-- http://kdl.ge.com/AM-CDM-base#PersonQualification -->
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#OrganizationType">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Organization"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-base#PersonQualification">
+    <rdfs:subClassOf rdf:resource="http://kdl.ge.com/AM-CDM-base#Qualification"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
+            <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-
-    <!-- http://kdl.ge.com/AM-CDM-base#Person -->
-
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Person">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
-                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
-
-
-    <!-- http://kdl.ge.com/AM-CDM-base#PersonQualification -->
-
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#PersonQualification">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-base#Qualification"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
 </rdf:RDF>
 
 
