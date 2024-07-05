@@ -33,112 +33,78 @@
     
 
 
-    <!-- http://kdl.ge.com/AM-CDM-material#Feedstock -->
+  <!-- http://kdl.ge.com/AM-CDM-material#Feedstock -->
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#Feedstock">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofFeedstock"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-material#Feedstock">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+            <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofFeedstock"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
+<!-- http://kdl.ge.com/AM-CDM-material#FeedstockFormType -->
 
-    <!-- http://kdl.ge.com/AM-CDM-material#FeedstockFormType -->
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-material#FeedstockFormType">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
+            <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofFeedstock"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#FeedstockFormType">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofFeedstock"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<!-- http://kdl.ge.com/AM-CDM-material#MaterialProperties -->
 
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-material#MaterialProperties">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
+            <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-    <!-- http://kdl.ge.com/AM-CDM-material#MaterialProperties -->
+<!-- http://kdl.ge.com/AM-CDM-material#MaterialType -->
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#MaterialProperties">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-material#MaterialType">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
+            <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfMaterial"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
+<!-- http://kdl.ge.com/AM-CDM-material#ParentFeedstock -->
 
-    <!-- http://kdl.ge.com/AM-CDM-material#MaterialType -->
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-material#ParentFeedstock">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+            <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofReusedFeedstock"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#MaterialType">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfMaterial"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<!-- http://kdl.ge.com/AM-CDM-material#PowderLot -->
 
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-material#PowderLot">
+    <rdfs:subClassOf rdf:resource="http://kdl.ge.com/AM-CDM-material#Feedstock"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+            <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofPowder"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-    <!-- http://kdl.ge.com/AM-CDM-material#ParentFeedstock -->
-
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#ParentFeedstock">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofReusedFeedstock"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
-
-
-    <!-- http://kdl.ge.com/AM-CDM-material#PowderLot -->
-
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#PowderLot">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-material#Feedstock"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofPowder"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
 </rdf:RDF>
 
 
