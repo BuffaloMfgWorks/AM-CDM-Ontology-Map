@@ -363,6 +363,20 @@
         <rdfs:comment>This class represents any organized assembly of components that work together to perform specific functions or achieve particular goals.</rdfs:comment>
         <rdfs:label xml:lang="en">System</rdfs:label>
     </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildInterruption">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_part_of_process"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <cco:definition xml:lang="en">A process that is part of an Act of Manufacturing which temporarily halts the manufacturing process.</cco:definition>
+        <rdfs:comment xml:lang="en">This class represents any interruption that occurs during the manufacturing process, causing a temporary halt in production.</rdfs:comment>
+        <rdfs:label xml:lang="en">Build Interruption</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
