@@ -395,7 +395,8 @@
         </owl:Class>
     </owl:equivalentClass>
     <cco:definition xml:lang="en">A material artifact that provides a stable and supportive surface on which the additive manufacturing process occurs, typically made of materials suitable to withstand high temperatures and mechanical stresses.</cco:definition>
-    <rdfs:comment xml:lang="en">This class represents the build platform used in additive manufacturing machines to support the layers of material being deposited during the manufacturing process.</rdfs:label>
+    <rdfs:label xml:lang="en">Build Platform</rdfs:label>
+    <rdfs:comment xml:lang="en">This class represents the build platform used in additive manufacturing machines to support the layers of material being deposited during the manufacturing process.</rdfs:comment>
 </owl:Class>
 
 <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/PartDesign">
