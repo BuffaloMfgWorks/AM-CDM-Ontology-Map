@@ -161,6 +161,40 @@
     
 
 
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/BuildInterruption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildInterruption">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_part_of_process"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <cco:definition xml:lang="en">A process that is part of an Act of Manufacturing which temporarily halts the manufacturing process.</cco:definition>
+        <rdfs:comment xml:lang="en">This class represents any interruption that occurs during the manufacturing process, causing a temporary halt in production.</rdfs:comment>
+        <rdfs:label xml:lang="en">Build Interruption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/BuildPlatform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildPlatform">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/StructuralSupportArtifactFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <cco:definition xml:lang="en">A material artifact that provides a stable and supportive surface on which the additive manufacturing process occurs, typically made of materials suitable to withstand high temperatures and mechanical stresses.</cco:definition>
+        <rdfs:comment xml:lang="en">This class represents the build platform used in additive manufacturing machines to support the layers of material being deposited during the manufacturing process.</rdfs:comment>
+        <rdfs:label xml:lang="en">Build Platform</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/InSituMonitoringAct -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/InSituMonitoringAct">
@@ -243,6 +277,23 @@
         <cco:alternative_label xml:lang="en">Part</cco:alternative_label>
         <cco:definition xml:lang="en">A Material Artifact that bears some Part Role</cco:definition>
         <rdfs:label xml:lang="en">Material Artifact Part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/PartDesign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/PartDesign">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactDesignContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/MaterialArtifactPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <cco:definition xml:lang="en">A Directive Information Content Entity that specifies the design of a material artifact part intended to fulfill a particular function within an artifact, considering a set of requirements and constraints.</cco:definition>
+        <rdfs:comment xml:lang="en">This class represents the detailed design documents, CAD models, and specifications used to create a part within an additive manufacturing process.</rdfs:comment>
+        <rdfs:label xml:lang="en">Part Design</rdfs:label>
     </owl:Class>
     
 
@@ -363,60 +414,6 @@
         <rdfs:comment>This class represents any organized assembly of components that work together to perform specific functions or achieve particular goals.</rdfs:comment>
         <rdfs:label xml:lang="en">System</rdfs:label>
     </owl:Class>
-
-
-    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildInterruption">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_part_of_process"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <cco:definition xml:lang="en">A process that is part of an Act of Manufacturing which temporarily halts the manufacturing process.</cco:definition>
-        <rdfs:comment xml:lang="en">This class represents any interruption that occurs during the manufacturing process, causing a temporary halt in production.</rdfs:comment>
-        <rdfs:label xml:lang="en">Build Interruption</rdfs:label>
-    </owl:Class>
-
-<owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildPlatform">
-    <owl:equivalentClass>
-        <owl:Class>
-            <owl:intersectionOf rdf:parseType="Collection">
-                <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
-                <owl:Restriction>
-                    <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_function"/>
-                    <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/StructuralSupportArtifactFunction"/>
-                </owl:Restriction>
-                <owl:Restriction>
-                    <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_material_basis"/>
-                    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildMaterial"/>
-                </owl:Restriction>
-            </owl:intersectionOf>
-        </owl:Class>
-    </owl:equivalentClass>
-    <cco:definition xml:lang="en">A material artifact that provides a stable and supportive surface on which the additive manufacturing process occurs, typically made of materials suitable to withstand high temperatures and mechanical stresses.</cco:definition>
-    <rdfs:label xml:lang="en">Build Platform</rdfs:label>
-    <rdfs:comment xml:lang="en">This class represents the build platform used in additive manufacturing machines to support the layers of material being deposited during the manufacturing process.</rdfs:comment>
-</owl:Class>
-
-<owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/PartDesign">
-    <owl:equivalentClass>
-        <owl:Class>
-            <owl:intersectionOf rdf:parseType="Collection">
-                <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactDesignContentEntity"/>
-                <owl:Restriction>
-                    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
-                    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/MaterialArtifactPart"/>
-                </owl:Restriction>
-            </owl:intersectionOf>
-        </owl:Class>
-    </owl:equivalentClass>
-    <cco:definition xml:lang="en">A Directive Information Content Entity that specifies the design of a material artifact part intended to fulfill a particular function within an artifact, considering a set of requirements and constraints.</cco:definition>
-    <rdfs:comment xml:lang="en">This class represents the detailed design documents, CAD models, and specifications used to create a part within an additive manufacturing process.</rdfs:comment>
-    <rdfs:label xml:lang="en">Part Design</rdfs:label>
-</owl:Class>
-
-
 </rdf:RDF>
 
 
