@@ -34,6 +34,19 @@
     
 
 
+    <!-- http://kdl.ge.com/AM-CDM-build#BuildInterruption -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#BuildInterruption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildInterruption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://kdl.ge.com/AM-CDM-build#Part -->
 
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#Part">
@@ -48,6 +61,14 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://kdl.ge.com/AM-CDM-build#PartDesign -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#PartDesign">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PartDesign"/>
     </rdf:Description>
     
 
@@ -67,6 +88,12 @@
             </owl:Class>
         </owl:equivalentClass>
     </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/PartDesign -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/PartDesign"/>
 </rdf:RDF>
 
 
