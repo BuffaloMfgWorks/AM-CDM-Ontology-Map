@@ -26,62 +26,47 @@
     
 
 
-    <!-- http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TICType -->
+  <owl:Class rdf:about="http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TICType">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
+            <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TICType">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<!-- http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TestResult -->
 
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TestResult">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
+            <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/> <!-- Role -->
+        </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_output_of"/>
+            <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-    <!-- http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TestResult -->
+<!-- http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TestType -->
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TestResult">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_output_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TestType">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
+            <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-
-    <!-- http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TestType -->
-
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-testInspectionCharacterization#TestType">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMeasuring"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-
+</rdf:RDF>
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
