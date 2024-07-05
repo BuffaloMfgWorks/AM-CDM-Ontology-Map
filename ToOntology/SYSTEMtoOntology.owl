@@ -35,164 +35,113 @@
 
     <!-- http://kdl.ge.com/AM-CDM-system#BuildVolume -->
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#BuildVolume">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofFeedstock"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-system#BuildVolume">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"/>
+            <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PortionofFeedstock"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
+<!-- http://kdl.ge.com/AM-CDM-system#Camera -->
 
-    <!-- http://kdl.ge.com/AM-CDM-system#Camera -->
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-system#Camera">
+    <rdfs:subClassOf rdf:resource="http://kdl.ge.com/AM-CDM-system#SpecificSubsystem"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+            <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Camera"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#Camera">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#SpecificSubsystem"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
-                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Camera"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<!-- http://kdl.ge.com/AM-CDM-system#InSituMonitoringSystem -->
 
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-system#InSituMonitoringSystem">
+    <rdfs:subClassOf rdf:resource="http://kdl.ge.com/AM-CDM-system#System"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+            <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/InSituMonitoringSystem"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-    <!-- http://kdl.ge.com/AM-CDM-system#InSituMonitoringSystem -->
+<!-- http://kdl.ge.com/AM-CDM-system#LaserSystem -->
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#InSituMonitoringSystem">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#System"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/InSituMonitoringSystem"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-system#LaserSystem">
+    <rdfs:subClassOf rdf:resource="http://kdl.ge.com/AM-CDM-system#SpecificSubsystem"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+            <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Laser"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
+<!-- http://kdl.ge.com/AM-CDM-system#MaintenanceEvent -->
 
-    <!-- http://kdl.ge.com/AM-CDM-system#LaserSystem -->
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-system#MaintenanceEvent">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+            <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMaintenance"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#LaserSystem">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#SpecificSubsystem"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
-                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Laser"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<!-- http://kdl.ge.com/AM-CDM-system#NonAMSystem -->
 
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-system#NonAMSystem">
+    <rdfs:subClassOf rdf:resource="http://kdl.ge.com/AM-CDM-system#System"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+            <owl:someValuesFrom rdf:resource="http://kdl.ge.com/AM-CDM-system#System"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-    <!-- http://kdl.ge.com/AM-CDM-system#MaintenanceEvent -->
+<!-- http://kdl.ge.com/AM-CDM-system#SpecificSubsystem -->
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#MaintenanceEvent">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
-                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfMaintenance"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-system#SpecificSubsystem">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+            <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/Subsystem"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
+<!-- http://kdl.ge.com/AM-CDM-system#System -->
 
-    <!-- http://kdl.ge.com/AM-CDM-system#NonAMSystem -->
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-system#System">
+    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+            <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">System Information</rdfs:label>
+</owl:Class>
 
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#NonAMSystem">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#System"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
-                        <owl:someValuesFrom rdf:resource="http://kdl.ge.com/AM-CDM-system#System"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
+<!-- http://kdl.ge.com/AM-CDM-system#SystemCalibration -->
 
+<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-system#SystemCalibration">
+    <rdfs:subClassOf rdf:resource="http://kdl.ge.com/AM-CDM-system#MaintenanceEvent"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+            <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
 
-    <!-- http://kdl.ge.com/AM-CDM-system#SpecificSubsystem -->
-
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#SpecificSubsystem">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/Subsystem"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
-
-
-    <!-- http://kdl.ge.com/AM-CDM-system#System -->
-
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#System">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:label xml:lang="en">Sysyem Information</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://kdl.ge.com/AM-CDM-system#SystemCalibration -->
-
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#SystemCalibration">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-system#MaintenanceEvent"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
 </rdf:RDF>
 
 
