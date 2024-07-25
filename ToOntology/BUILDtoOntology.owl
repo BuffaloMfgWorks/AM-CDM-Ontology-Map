@@ -18,11 +18,9 @@
         <dc:contributor xml:lang="en">Alex Kitt</dc:contributor>
         <dc:contributor xml:lang="en">Carter Benson</dc:contributor>
         <dc:contributor xml:lang="en">Luke Mohr</dc:contributor>
-        <rdfs:comment xml:lang="en">This attifact contains a the aboutness relations between the AM-CDM and a Manufacturing Ontology built out of the Common Core Ontologies</rdfs:comment>
+        <rdfs:comment xml:lang="en">This artifact contains the aboutness relations between the AM-CDM and a Manufacturing Ontology built out of the Common Core Ontologies.</rdfs:comment>
     </owl:Ontology>
     
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -31,11 +29,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
     <!-- http://kdl.ge.com/AM-CDM-build#BuildInterruption -->
-
     <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#BuildInterruption">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -45,31 +39,26 @@
         </rdfs:subClassOf>
     </rdf:Description>
     
+    <!-- http://kdl.ge.com/AM-CDM-build#Part -->
+    <owl:Class rdf:about="http://kdl.ge.com/AM-CDM-build#Part">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/MaterialArtifactPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
 
-    
-
-<!-- http://kdl.ge.com/AM-CDM-build#Part -->
-
-<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-build#Part">
-    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
-    <rdfs:subClassOf>
-        <owl:Restriction>
-            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
-            <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/MaterialArtifactPart"/>
-        </owl:Restriction>
-    </rdfs:subClassOf>
-</owl:Class>
-
-<!-- http://kdl.ge.com/AM-CDM-build#Project -->
-
-<owl:Class rdf:about="http://kdl.ge.com/AM-CDM-build#Project">
-    <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
-    <rdfs:subClassOf>
-        <owl:Restriction>
-            <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
-            <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PlanSpecification"/>
-        </owl:Restriction>
-    </rdfs:subClassOf>
-</owl:Class>
-
+    <!-- http://kdl.ge.com/AM-CDM-build#Project -->
+    <owl:Class rdf:about="http://kdl.ge.com/AM-CDM-build#Project">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PlanSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
 </rdf:RDF>
+
