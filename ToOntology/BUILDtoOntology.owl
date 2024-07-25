@@ -50,6 +50,22 @@
         </rdfs:subClassOf>
     </owl:Class>
 
+    <!-- http://kdl.ge.com/AM-CDM-build#PartDesign -->
+
+    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#PartDesign">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/MaterialArtifactPart"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
     <!-- http://kdl.ge.com/AM-CDM-build#Project -->
     <owl:Class rdf:about="http://kdl.ge.com/AM-CDM-build#Project">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
