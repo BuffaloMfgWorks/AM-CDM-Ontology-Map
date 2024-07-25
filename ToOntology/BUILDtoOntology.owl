@@ -46,14 +46,6 @@
     </rdf:Description>
     
 
-
-
-
-    <!-- http://kdl.ge.com/AM-CDM-build#PartDesign -->
-
-    <rdf:Description rdf:about="http://kdl.ge.com/AM-CDM-build#PartDesign">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/PartDesign"/>
-    </rdf:Description>
     
 
 <!-- http://kdl.ge.com/AM-CDM-build#Part -->
@@ -81,12 +73,6 @@
 </owl:Class>
 
     
-
-
-    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/PartDesign -->
-
-    <rdf:Description rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/PartDesign"/>
-</rdf:RDF>
 
 
 
