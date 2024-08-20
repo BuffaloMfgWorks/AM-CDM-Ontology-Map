@@ -23,6 +23,50 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/hasDisposition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/hasDisposition">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label xml:lang="en">has disposition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/hasQuality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/hasQuality">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">has quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/hasRole">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label xml:lang="en">has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -46,7 +90,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
-        <cco:definition>A System that bears some Component Role within an Additive Manufacturing System.</cco:definition>
+        <cco:definition>A System that is bearer of some Component Role within an Additive Manufacturing System.</cco:definition>
         <rdfs:comment>This class represents subsystems within an Additive Manufacturing System, such as a laser system in a selective laser sintering machine or an extruder in a fused deposition modeling printer, which are essential for the system&apos;s operation and success in manufacturing processes.</rdfs:comment>
         <rdfs:label xml:lang="en">Additive Manufacturing Subsystem</rdfs:label>
     </owl:Class>
@@ -56,17 +100,6 @@
     <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystem -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystem">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/System"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystemRole"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -82,17 +115,6 @@
         <cco:definition>A System that is an agent in an Act Of Additive Manufacturing and is the bearer of some AM System Role.</cco:definition>
         <rdfs:comment>This class represents systems specifically designed to carry out additive manufacturing processes, often involving the deposition of materials layer by layer to form objects.</rdfs:comment>
         <rdfs:label xml:lang="en">Additive Manufacturing System</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystemRole -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystemRole">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/SystemRole"/>
-        <cco:definition>A System Role that inheres in some object aggregate that, if realized, is realized when the system performs an Act Of Additive Manufacturing through the coordinated operation of its components.</cco:definition>
-        <rdfs:comment>This role is designated for systems that facilitate the additive manufacturing process, ensuring the coordination and functionality of the system&apos;s components to produce objects through layer-by-layer material deposition.</rdfs:comment>
-        <rdfs:label xml:lang="en">Additive Manufacturing System Role</rdfs:label>
     </owl:Class>
     
 
@@ -116,6 +138,7 @@
         <cco:example_of_usage>Examples include 3D printing processes such as Fused Deposition Modeling (FDM), Selective Laser Sintering (SLS), and Stereolithography (SLA).</cco:example_of_usage>
         <rdfs:comment>This process typically involves the use of digital models to direct machinery in the layer-by-layer addition of material, resulting in a three-dimensional object. It is distinct from subtractive manufacturing, which removes material to form an object.</rdfs:comment>
         <rdfs:label xml:lang="en">Act of Additive Manufacturing</rdfs:label>
+        <rdfs:label xml:lang="en">Layer-by-Layer Deposition Act</rdfs:label>
     </owl:Class>
     
 
@@ -151,6 +174,27 @@
     
 
 
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/BinderJettingAct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/BinderJettingAct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/ActOfAdditiveManufacturing"/>
+        <cco:definition>An act of additive manufacturing where a liquid binding agent is selectively deposited onto a powder bed, binding the material layer by layer to form an object.</cco:definition>
+        <rdfs:label xml:lang="en">Binder Jetting Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/BinderJettingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/BinderJettingSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystem"/>
+        <cco:definition>An Additive Manufacturing System designed to deposit some portion of liquid binding feedstock in layers onto a powder bed of materials to create parts.</cco:definition>
+        <rdfs:comment>This system is versatile and cost-effective, used for full-color prototypes and sand-casting molds.</rdfs:comment>
+        <rdfs:label xml:lang="en">Binder Jetting System</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/BuildChamber -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildChamber">
@@ -178,19 +222,79 @@
     
 
 
-    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/BuildPlatform -->
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/BuildPlatformRole -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildPlatform">
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildPlatformRole">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <cco:definition>A role that, if realized, is realized when a material artifact provides support during some act of additive manufacturing.</cco:definition>
+        <rdfs:comment>This class represents the functional role of an object as a build platform during additive manufacturing processes.</rdfs:comment>
+        <rdfs:label xml:lang="en">AM Build Platform Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/CeramicPlate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/CeramicPlate">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/StructuralSupportArtifactFunction"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/hasRole"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildPlatformRole"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <cco:definition xml:lang="en">A material artifact that provides a stable and supportive surface on which the additive manufacturing process occurs, typically made of materials suitable to withstand high temperatures and mechanical stresses.</cco:definition>
-        <rdfs:comment xml:lang="en">This class represents the build platform used in additive manufacturing machines to support the layers of material being deposited during the manufacturing process.</rdfs:comment>
-        <rdfs:label xml:lang="en">Build Platform</rdfs:label>
+        <cco:definition>A ceramic surface used as a build platform in additive manufacturing processes, supporting the build material and the part being fabricated.</cco:definition>
+        <rdfs:comment>This class represents ceramic plates commonly used as build platforms in various additive manufacturing methods.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ceramic Plate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/DirectedEnergyDepositionAct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/DirectedEnergyDepositionAct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/ActOfAdditiveManufacturing"/>
+        <cco:definition>An act of additive manufacturing where focused thermal energy is used to melt and deposit material to form layers.</cco:definition>
+        <rdfs:label xml:lang="en">Directed Energy Deposition Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/DirectedEnergyDepositionSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/DirectedEnergyDepositionSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystem"/>
+        <cco:definition>An Additive Manufacturing System designed to use a laser or electron beam to melt some portion of feedstock and deposit it around a fixed object, forming layers as it hardens.</cco:definition>
+        <rdfs:comment>This system is used to create and repair parts, utilizing materials such as metal powder, ceramics, wires, or polymers.</rdfs:comment>
+        <rdfs:label xml:lang="en">Directed Energy Deposition System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/FeedstockRecyclingAct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/FeedstockRecyclingAct">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactProcessing"/>
+        <cco:definition>An act of artifact manipulation where previously used feedstock is reprocessed for reuse in future manufacturing cycles.</cco:definition>
+        <rdfs:comment>This class covers processes that involve the collection, cleaning, and reprocessing of used feedstock materials, such as metal powders or polymers, to make them suitable for reuse in subsequent manufacturing operations.</rdfs:comment>
+        <rdfs:label xml:lang="en">Feedstock Recycling Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/GlassPlate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/GlassPlate">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/hasRole"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildPlatformRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <cco:definition>A glass surface used as a build platform in additive manufacturing processes, supporting the build material and the part being fabricated.</cco:definition>
+        <rdfs:comment>This class represents glass plates commonly used as build platforms in various additive manufacturing methods.</rdfs:comment>
+        <rdfs:label xml:lang="en">Glass Plate</rdfs:label>
     </owl:Class>
     
 
@@ -281,6 +385,76 @@
     
 
 
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/MaterialExtrusionAct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/MaterialExtrusionAct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/ActOfAdditiveManufacturing"/>
+        <cco:definition>An act of additive manufacturing where material is extruded through a nozzle or orifice and deposited to form successive layers.</cco:definition>
+        <rdfs:label xml:lang="en">Material Extrusion Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/MaterialExtrusionSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/MaterialExtrusionSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystem"/>
+        <cco:definition>An Additive Manufacturing System designed to perform material extrusion, where material is extruded through a nozzle or orifice to form successive layers.</cco:definition>
+        <rdfs:comment>This system is typically used in Fused Deposition Modeling (FDM) and other similar techniques, where thermoplastic material is heated and extruded layer by layer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Material Extrusion System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/MaterialJettingAct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/MaterialJettingAct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/ActOfAdditiveManufacturing"/>
+        <cco:definition>An act of additive manufacturing where droplets of material are deposited layer by layer to build an object.</cco:definition>
+        <rdfs:label xml:lang="en">Material Jetting Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/MaterialJettingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/MaterialJettingSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystem"/>
+        <cco:definition>An Additive Manufacturing System designed to perform material jetting, where droplets of material are deposited layer by layer to build an object.</cco:definition>
+        <rdfs:comment>This system is often used for creating prototypes and complex parts, where precision and smooth surface finishes are required.</rdfs:comment>
+        <rdfs:label xml:lang="en">Material Jetting System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/MaterialPreparationAct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/MaterialPreparationAct">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactProcessing"/>
+        <cco:definition>An act of material processing where materials are prepared for subsequent use in additive manufacturing processes, such as mixing, drying, or heating.</cco:definition>
+        <rdfs:comment>This class represents the processes involved in preparing raw materials for use in additive manufacturing, including various steps like mixing powders, drying materials to remove moisture, or heating substances to a specific temperature.</rdfs:comment>
+        <rdfs:label xml:lang="en">Material Preparation Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/MetalPlate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/MetalPlate">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/hasRole"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildPlatformRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <cco:definition>A metal surface used as a build platform in additive manufacturing processes, supporting the build material and the part being fabricated.</cco:definition>
+        <rdfs:comment>This class represents metal plates commonly used as build platforms in various additive manufacturing methods.</rdfs:comment>
+        <rdfs:label xml:lang="en">Metal Plate</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/PartDesign -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/PartDesign">
@@ -294,6 +468,23 @@
         <cco:definition xml:lang="en">A Directive Information Content Entity that specifies the design of a material artifact part intended to fulfill a particular function within an artifact, considering a set of requirements and constraints.</cco:definition>
         <rdfs:comment xml:lang="en">This class represents the detailed design documents, CAD models, and specifications used to create a part within an additive manufacturing process.</rdfs:comment>
         <rdfs:label xml:lang="en">Part Design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/PolymerPlate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/PolymerPlate">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/hasRole"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildPlatformRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <cco:definition>A polymer surface used as a build platform in additive manufacturing processes, supporting the build material and the part being fabricated.</cco:definition>
+        <rdfs:comment>This class represents polymer plates commonly used as build platforms in various additive manufacturing methods.</rdfs:comment>
+        <rdfs:label xml:lang="en">Polymer Plate</rdfs:label>
     </owl:Class>
     
 
@@ -364,6 +555,65 @@
     
 
 
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/PowderBed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/PowderBed">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/hasRole"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/BuildPlatformRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <cco:definition>A layer of powdered material used in additive manufacturing processes, which often plays the role of a build platform by supporting the build material and the part being fabricated.</cco:definition>
+        <rdfs:comment>This class represents the powdered material bed in processes like Binder Jetting and Powder Bed Fusion, which serves as the base layer for constructing parts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Powder Bed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/PowderBedFusionAct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/PowderBedFusionAct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/ActOfAdditiveManufacturing"/>
+        <cco:definition>An act of additive manufacturing where thermal energy selectively fuses regions of a powder bed to form layers.</cco:definition>
+        <rdfs:label xml:lang="en">Powder Bed Fusion Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/PowderBedFusionSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/PowderBedFusionSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystem"/>
+        <cco:definition>An Additive Manufacturing System designed to use a laser or electron beam, to fuse, sinter, or melt particles of some portion of powder feedstock together in layers.</cco:definition>
+        <rdfs:comment>This system employs different energy sources and base materials, such as Selective Laser Sintering (SLS), Selective Laser Melting (SLM), and Direct Metal Laser Sintering (DMLS).</rdfs:comment>
+        <rdfs:label xml:lang="en">Powder Bed Fusion System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/SheetLaminationAct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/SheetLaminationAct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/ActOfAdditiveManufacturing"/>
+        <cco:definition>An act of additive manufacturing where sheets of material are bonded together layer by layer to form an object.</cco:definition>
+        <rdfs:label xml:lang="en">Sheet Lamination Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/SheetLaminationSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/SheetLaminationSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystem"/>
+        <cco:definition>An Additive Manufacturing System designed for sheet lamination, where sheets of material are bonded together layer by layer to form an object.</cco:definition>
+        <rdfs:comment>This system is often used in Laminated Object Manufacturing (LOM), where sheets of material such as paper, plastic, or metal are bonded and cut to shape.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sheet Lamination System</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/Subsystem -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/Subsystem">
@@ -414,9 +664,30 @@
         <rdfs:comment>This class represents any organized assembly of components that work together to perform specific functions or achieve particular goals.</rdfs:comment>
         <rdfs:label xml:lang="en">System</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/VatPhotopolymerizationAct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/VatPhotopolymerizationAct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/ActOfAdditiveManufacturing"/>
+        <cco:definition>An act of additive manufacturing where a liquid photopolymer is selectively cured using a light source.</cco:definition>
+        <rdfs:label xml:lang="en">Vat Photopolymerization Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AdditiveManufacturingOntology/VatPhotopolymerizationSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology/VatPhotopolymerizationSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology/AMSystem"/>
+        <cco:definition>An Additive Manufacturing System designed for vat photopolymerization, where a liquid photopolymer is selectively cured using a light source to form layers.</cco:definition>
+        <rdfs:comment>This system is commonly used in Stereolithography (SLA) and Digital Light Processing (DLP) technologies, where layers of photopolymer resin are cured by UV light.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vat Photopolymerization System</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
