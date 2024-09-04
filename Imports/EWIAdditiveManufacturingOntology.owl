@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ewi.org/ontology#"
+     xml:base="http://www.ewi.org/ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:cco="http://www.ontologyrepository.com/CommonCoreOntologies/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.ewi.org/ontology">
+        <owl:versionIRI rdf:resource="http://www.ewi.org/ontology"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/Imports/EWIManufacturing.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ewi.org/ontology/hasDisposition -->
+
+    <owl:ObjectProperty rdf:about="http://www.ewi.org/ontology/hasDisposition">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label xml:lang="en">has disposition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ewi.org/ontology/hasQuality -->
+
+    <owl:ObjectProperty rdf:about="http://www.ewi.org/ontology/hasQuality">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">has quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ewi.org/ontology/hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.ewi.org/ontology/hasRole">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label xml:lang="en">has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- http://www.ewi.org/ontology/AMSystem -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/AMSystem">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ewi.org/ontology/System"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/agent_in"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ewi.org/ontology/ActOfAdditiveManufacturing"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ewi.org/ontology/System"/>
+        <cco:definition>A System that is an agent in an Act Of Additive Manufacturing and is the bearer of some AM System Role.</cco:definition>
+        <rdfs:comment>This class represents systems specifically designed to carry out additive manufacturing processes, often involving the deposition of materials layer by layer to form objects.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additive Manufacturing System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ewi.org/ontology/ActOfAdditiveManufacturing -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/ActOfAdditiveManufacturing">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_input"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ewi.org/ontology/PortionofFeedstock"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing"/>
+        <cco:definition>An Act Of Manufacturing that involves the deposition of successive layers of material to create an object, using a PortionofFeedstock as input.</cco:definition>
+        <cco:example_of_usage>Examples include 3D printing processes such as Fused Deposition Modeling (FDM), Selective Laser Sintering (SLS), and Stereolithography (SLA).</cco:example_of_usage>
+        <rdfs:comment>This process typically involves the use of digital models to direct machinery in the layer-by-layer addition of material, resulting in a three-dimensional object. It is distinct from subtractive manufacturing, which removes material to form an object.</rdfs:comment>
+        <rdfs:label xml:lang="en">Act of Additive Manufacturing</rdfs:label>
+        <rdfs:label xml:lang="en">Layer-by-Layer Deposition Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ewi.org/ontology/AdditiveManufacturingBuildSite -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/AdditiveManufacturingBuildSite">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ewi.org/ontology/BuildChamber"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <cco:definition xml:lang="en">a site within a build chamber where the additive manufacturing process occurs.</cco:definition>
+        <rdfs:label xml:lang="en">Additive Manufacturing Build Site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ewi.org/ontology/AdditiveManufacturingFacility -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/AdditiveManufacturingFacility">
+        <rdfs:subClassOf rdf:resource="http://www.ewi.org/ontology/ManufacturingFacility"/>
+        <cco:definition xml:lang="en">a manufacturing facility that is designed for the production of goods using some additive manufacturing act</cco:definition>
+        <rdfs:comment xml:lang="en">Note that it is often the case that subtractive manufacturing often occurs at additive manufacturing facilities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ewi.org/ontology/BinderJettingAct -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/BinderJettingAct">
+        <rdfs:subClassOf rdf:resource="http://www.ewi.org/ontology/ActOfAdditiveManufacturing"/>
+        <cco:definition>An act of additive manufacturing where a liquid binding agent is selectively deposited onto a powder bed, binding the material layer by layer to form an object.</cco:definition>
+        <rdfs:label xml:lang="en">Binder Jetting Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ewi.org/ontology/BinderJettingSystem -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/BinderJettingSystem">
+        <rdfs:subClassOf rdf:resource="http://www.ewi.org/ontology/AMSystem"/>
+        <cco:definition>An Additive Manufacturing System designed to deposit some portion of liquid binding feedstock in layers onto a powder bed of materials to create parts.</cco:definition>
+        <rdfs:comment>This system is versatile and cost-effective, used for full-color prototypes and sand-casting molds.</rdfs:comment>
+        <rdfs:label xml:lang="en">Binder Jetting System</rdfs:label>
+    </owl:Class>
+    
+
+
+
+
+    <!-- http://www.ewi.org/ontology/DirectedEnergyDepositionAct -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/DirectedEnergyDepositionAct">
+        <rdfs:subClassOf rdf:resource="http://www.ewi.org/ontology/ActOfAdditiveManufacturing"/>
+        <cco:definition>An act of additive manufacturing where focused thermal energy is used to melt and deposit material to form layers.</cco:definition>
+        <rdfs:label xml:lang="en">Directed Energy Deposition Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ewi.org/ontology/DirectedEnergyDepositionSystem -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/DirectedEnergyDepositionSystem">
+        <rdfs:subClassOf rdf:resource="http://www.ewi.org/ontology/AMSystem"/>
+        <cco:definition>An Additive Manufacturing System designed to use a laser or electron beam to melt some portion of feedstock and deposit it around a fixed object, forming layers as it hardens.</cco:definition>
+        <rdfs:comment>This system is used to create and repair parts, utilizing materials such as metal powder, ceramics, wires, or polymers.</rdfs:comment>
+        <rdfs:label xml:lang="en">Directed Energy Deposition System</rdfs:label>
+    </owl:Class>
+    
+
+
+
+
+    <!-- http://www.ewi.org/ontology/MaterialArtifactPart -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/MaterialArtifactPart">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PartRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+        <cco:alternative_label xml:lang="en">Part</cco:alternative_label>
+        <cco:definition xml:lang="en">A Material Artifact that bears some Part Role</cco:definition>
+        <rdfs:label xml:lang="en">Material Artifact Part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ewi.org/ontology/MaterialExtrusionAct -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/MaterialExtrusionAct">
+        <rdfs:subClassOf rdf:resource="http://www.ewi.org/ontology/ActOfAdditiveManufacturing"/>
+        <cco:definition>An act of additive manufacturing where material is extruded through a nozzle or orifice and deposited to form successive layers.</cco:definition>
+        <rdfs:label xml:lang="en">Material Extrusion Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ewi.org/ontology/MaterialExtrusionSystem -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/MaterialExtrusionSystem">
+        <rdfs:subClassOf rdf:resource="http://www.ewi.org/ontology/AMSystem"/>
+        <cco:definition>An Additive Manufacturing System designed to perform material extrusion, where material is extruded through a nozzle or orifice to form successive layers.</cco:definition>
+        <rdfs:comment>This system is typically used in Fused Deposition Modeling (FDM) and other similar techniques, where thermoplastic material is heated and extruded layer by layer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Material Extrusion System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ewi.org/ontology/MaterialJettingAct -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/MaterialJettingAct">
+        <rdfs:subClassOf rdf:resource="http://www.ewi.org/ontology/ActOfAdditiveManufacturing"/>
+        <cco:definition>An act of additive manufacturing where droplets of material are deposited layer by layer to build an object.</cco:definition>
+        <rdfs:label xml:lang="en">Material Jetting Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ewi.org/ontology/MaterialJettingSystem -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/MaterialJettingSystem">
+        <rdfs:subClassOf rdf:resource="http://www.ewi.org/ontology/AMSystem"/>
+        <cco:definition>An Additive Manufacturing System designed to perform material jetting, where droplets of material are deposited layer by layer to build an object.</cco:definition>
+        <rdfs:comment>This system is often used for creating prototypes and complex parts, where precision and smooth surface finishes are required.</rdfs:comment>
+        <rdfs:label xml:lang="en">Material Jetting System</rdfs:label>
+    </owl:Class>
+    
+
+
+
+    <!-- http://www.ewi.org/ontology/MetalPlate -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/MetalPlate">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ewi.org/ontology/hasRole"/>
+                <owl:someValuesFrom rdf:resource="http://www.ewi.org/ontology/BuildPlatformRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <cco:definition>A metal surface used as a build platform in additive manufacturing processes, supporting the build material and the part being fabricated.</cco:definition>
+        <rdfs:comment>This class represents metal plates commonly used as build platforms in various additive manufacturing methods.</rdfs:comment>
+        <rdfs:label xml:lang="en">Metal Plate</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.ewi.org/ontology/PowderBedFusionAct -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/PowderBedFusionAct">
+        <rdfs:subClassOf rdf:resource="http://www.ewi.org/ontology/ActOfAdditiveManufacturing"/>
+        <cco:definition>An act of additive manufacturing where thermal energy selectively fuses regions of a powder bed to form layers.</cco:definition>
+        <rdfs:label xml:lang="en">Powder Bed Fusion Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ewi.org/ontology/PowderBedFusionSystem -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/PowderBedFusionSystem">
+        <rdfs:subClassOf rdf:resource="http://www.ewi.org/ontology/AMSystem"/>
+        <cco:definition>An Additive Manufacturing System designed to use a laser or electron beam, to fuse, sinter, or melt particles of some portion of powder feedstock together in layers.</cco:definition>
+        <rdfs:comment>This system employs different energy sources and base materials, such as Selective Laser Sintering (SLS), Selective Laser Melting (SLM), and Direct Metal Laser Sintering (DMLS).</rdfs:comment>
+        <rdfs:label xml:lang="en">Powder Bed Fusion System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ewi.org/ontology/SheetLaminationAct -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/SheetLaminationAct">
+        <rdfs:subClassOf rdf:resource="http://www.ewi.org/ontology/ActOfAdditiveManufacturing"/>
+        <cco:definition>An act of additive manufacturing where sheets of material are bonded together layer by layer to form an object.</cco:definition>
+        <rdfs:label xml:lang="en">Sheet Lamination Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ewi.org/ontology/SheetLaminationSystem -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/SheetLaminationSystem">
+        <rdfs:subClassOf rdf:resource="http://www.ewi.org/ontology/AMSystem"/>
+        <cco:definition>An Additive Manufacturing System designed for sheet lamination, where sheets of material are bonded together layer by layer to form an object.</cco:definition>
+        <rdfs:comment>This system is often used in Laminated Object Manufacturing (LOM), where sheets of material such as paper, plastic, or metal are bonded and cut to shape.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sheet Lamination System</rdfs:label>
+    </owl:Class>    
+
+
+    <!-- http://www.ewi.org/ontology/VatPhotopolymerizationAct -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/VatPhotopolymerizationAct">
+        <rdfs:subClassOf rdf:resource="http://www.ewi.org/ontology/ActOfAdditiveManufacturing"/>
+        <cco:definition>An act of additive manufacturing where a liquid photopolymer is selectively cured using a light source.</cco:definition>
+        <rdfs:label xml:lang="en">Vat Photopolymerization Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ewi.org/ontology/VatPhotopolymerizationSystem -->
+
+    <owl:Class rdf:about="http://www.ewi.org/ontology/VatPhotopolymerizationSystem">
+        <rdfs:subClassOf rdf:resource="http://www.ewi.org/ontology/AMSystem"/>
+        <cco:definition>An Additive Manufacturing System designed for vat photopolymerization, where a liquid photopolymer is selectively cured using a light source to form layers.</cco:definition>
+        <rdfs:comment>This system is commonly used in Stereolithography (SLA) and Digital Light Processing (DLP) technologies, where layers of photopolymer resin are cured by UV light.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vat Photopolymerization System</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
