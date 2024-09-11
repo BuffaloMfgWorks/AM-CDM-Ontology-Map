@@ -32,7 +32,3 @@ This repository contains two folders:
 1. **Aboutness Relations**:
    - The **To Ontology** imports the map files and states what each class in the CDM is about.
    - For example, the `CDM:person` class is about the `CCO:person` class, and the `CDM:organization` class is about the `CCO:organization` class.
-
-2. **MERIOT Method**:
-   - To maintain a manageable size, each file uses the MERIOT method to import only necessary classes and their parentage.
-   - For example, **BuildToOntology** MERIOTs `act of manufacturing` from the Event Ontology. In order to connect `act of manufacturing` to `BFO:process`, `act`, `planned act`, and `act of artifact processing` are also MERIOTed.
