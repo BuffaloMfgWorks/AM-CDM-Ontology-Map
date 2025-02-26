@@ -62,6 +62,12 @@
     
 
 
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/has_input -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_input"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -70,6 +76,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
 
 
     <!-- http://www.ewi.org/ontology/AMSystem -->
@@ -97,7 +104,8 @@
     <!-- http://www.ewi.org/ontology/ActOfAdditiveManufacturing -->
 
     <owl:Class rdf:about="http://www.ewi.org/ontology/ActOfAdditiveManufacturing">
-        <owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing"/>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing"/>
@@ -107,8 +115,7 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfManufacturing"/>
+        </rdfs:subClassOf>
         <cco:definition>An Act Of Manufacturing that involves the deposition of successive layers of material to create an object, using a PortionofFeedstock as input.</cco:definition>
         <cco:example_of_usage>Examples include 3D printing processes such as Fused Deposition Modeling (FDM), Selective Laser Sintering (SLS), and Stereolithography (SLA).</cco:example_of_usage>
         <rdfs:comment>This process typically involves the use of digital models to direct machinery in the layer-by-layer addition of material, resulting in a three-dimensional object. It is distinct from subtractive manufacturing, which removes material to form an object.</rdfs:comment>
@@ -170,8 +177,6 @@
     
 
 
-
-
     <!-- http://www.ewi.org/ontology/DirectedEnergyDepositionAct -->
 
     <owl:Class rdf:about="http://www.ewi.org/ontology/DirectedEnergyDepositionAct">
@@ -191,8 +196,6 @@
         <rdfs:label xml:lang="en">Directed Energy Deposition System</rdfs:label>
     </owl:Class>
     
-
-
 
 
     <!-- http://www.ewi.org/ontology/MaterialArtifactPart -->
@@ -259,7 +262,6 @@
     
 
 
-
     <!-- http://www.ewi.org/ontology/MetalPlate -->
 
     <owl:Class rdf:about="http://www.ewi.org/ontology/MetalPlate">
@@ -274,7 +276,7 @@
         <rdfs:comment>This class represents metal plates commonly used as build platforms in various additive manufacturing methods.</rdfs:comment>
         <rdfs:label xml:lang="en">Metal Plate</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://www.ewi.org/ontology/PowderBedFusionAct -->
@@ -315,7 +317,8 @@
         <cco:definition>An Additive Manufacturing System designed for sheet lamination, where sheets of material are bonded together layer by layer to form an object.</cco:definition>
         <rdfs:comment>This system is often used in Laminated Object Manufacturing (LOM), where sheets of material such as paper, plastic, or metal are bonded and cut to shape.</rdfs:comment>
         <rdfs:label xml:lang="en">Sheet Lamination System</rdfs:label>
-    </owl:Class>    
+    </owl:Class>
+    
 
 
     <!-- http://www.ewi.org/ontology/VatPhotopolymerizationAct -->

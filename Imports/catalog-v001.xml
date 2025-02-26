@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1740019672392" name="http://www.ewi.org/ontology" uri="EWIAdditiveManufacturingOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740019672392" name="http://www.semanticweb.org/AdditiveManufacturingOntology" uri="AdditiveManufacturingOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740019672392" name="duplicate:http://www.semanticweb.org/ManufacturingOntology" uri="EWIManufacturing.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740019672392" name="duplicate:http://www.semanticweb.org/ManufacturingOntology" uri="Manufacturing.owl"/>
+    </group>
+</catalog>
