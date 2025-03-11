@@ -13,7 +13,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/ManufacturingOntology">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/ManufacturingOntology"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/develop/src/cco-merged/MergedAllCoreOntology-v1.5-2024-02-14.ttl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/refs/heads/develop/documentation/archive/previous-versions/MergedAllCoreOntology-v1.5-2024-02-14.ttl"/>
     </owl:Ontology>
     
 

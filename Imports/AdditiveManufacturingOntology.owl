@@ -13,8 +13,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/AdditiveManufacturingOntology">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/AdditiveManufacturingOntology"/>
-        <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/Imports/InformationEntityOntologyNoGEO.ttl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/refs/heads/develop/documentation/archive/previous-versions/MergedAllCoreOntology-v1.5-2024-02-14.ttl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BuffaloMfgWorks/AM-CDM-Ontology-Map/main/Imports/Manufacturing.owl"/>
     </owl:Ontology>
     
